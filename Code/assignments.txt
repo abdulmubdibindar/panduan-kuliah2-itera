@@ -1,0 +1,13 @@
+Activities
+BigBlueButton
+Choice_activity
+Database_activity
+Feedback_activity
+Forum_activity
+Glossary_activity
+H5P_activity
+Lesson_activity
+LTI_External_tool_activity
+SCORM_activity
+Wiki_activity
+Workshop_activity

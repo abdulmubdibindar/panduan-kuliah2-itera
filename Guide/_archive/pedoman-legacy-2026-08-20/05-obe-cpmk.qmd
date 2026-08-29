@@ -1,0 +1,13 @@
+# OBE / CPMK {#sec-obe-cpmk}
+
+::: {.callout-warning}
+Bab ini masih kerangka judul — isinya akan ditulis setelah @sec-kepesertaan disetujui. Label bagian di bawah ini sudah final supaya referensi silang dari bab lain tidak berubah nanti.
+:::
+
+## Plugin Competencies {#sec-competencies}
+
+Akan membahas plugin Competencies (`tool_lp`) bawaan Moodle — cocok secara struktur untuk CPL→CPMK, tapi belum dikonfigurasi sama sekali di instance kuliah2.itera.ac.id.
+
+## Grade Categories Berbobot di Gradebook {#sec-grade-categories}
+
+Akan membahas jalur praktis: grade category per CPMK dengan *aggregation* berbobot di Gradebook, yang bisa langsung dikerjakan dosen sendiri tanpa menunggu setup admin situs.

@@ -1,0 +1,55 @@
+project:
+  type: book
+  output-dir: _book
+  brand: assets/brand.yml
+
+book:
+  title: "Panduan Penggunaan Platform *New E-Learning* ITERA"
+  subtitle: "Mahasiswa"
+  date: "2026-08-20"
+  output-file: "Panduan-Moodle-ITERA-Mahasiswa"
+  chapters:
+    - index.qmd
+    - lembar-pengesahan.qmd
+    - login-dan-orientasi.qmd
+    - bergabung-dan-kelompok.qmd
+    - materi-dan-aktivitas.qmd
+    - pengumpulan-tugas.qmd
+
+lang: id
+date-format: "D MMMM YYYY"
+
+format:
+  typst:
+    papersize: a4
+    mainfont: "Carlito"
+    sansfont: "Playfair Display"
+    monofont: "JetBrains Mono"
+    font-paths:
+      - assets/fonts
+    fontsize: 11pt
+    margin:
+      x: 25mm
+      y: 25mm
+    toc: true
+    toc-depth: 3
+    toc-indent: 1.5em
+    number-sections: true
+    include-in-header:
+      - assets/typst-header.typ
+    template-partials:
+      - ../_shared/typst/typst-template.typ
+      - ../_shared/typst/typst-show.typ
+
+crossref:
+  fig-title: "Gambar"
+  tbl-title: "Tabel"
+  sec-prefix: "Bagian"
+
+language:
+  toc-title-document: "Daftar Isi"
+  callout-note-title: "Catatan"
+  callout-tip-title: "Kiat Praktis"
+  callout-warning-title: "Peringatan"
+  callout-important-title: "Perhatian"
+  callout-caution-title: "Peringatan"

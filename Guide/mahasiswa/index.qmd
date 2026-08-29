@@ -1,0 +1,11 @@
+# Tentang Panduan {-}
+
+`kuliah2.itera.ac.id` merupakan layanan *New E-Learning* ITERA yang dikembangkan dengan platform Moodle. Moodle adalah sistem pengelolaan pembelajaran (*Learning Management System* atau LMS) yang memusatkan bahan ajar, kegiatan kelas, pengumpulan tugas, ujian, nilai, dan komunikasi pembelajaran dalam satu lingkungan daring.
+
+Nama menu yang berubah atau tampilan yang berbeda antarperan dapat membuat mahasiswa merasa tersesat meskipun tindakannya sebenarnya sederhana. Panduan ini menjelaskan apa yang perlu dilakukan, tanda keberhasilan yang perlu dicari, dan tindakan ketika hasil di layar berbeda.
+
+## Cara membaca petunjuk {-}
+
+Nama tombol dan menu dicetak **tebal**. Teks yang harus dibaca persis seperti yang muncul di layar ditulis sebagai teks teknis. Setiap prosedur memiliki prasyarat, hasil yang diharapkan, cabang ketika hasil berbeda, batas kewenangan mahasiswa, dan tindakan berikutnya.
+
+Tampilan Moodle dapat berbeda menurut ukuran layar, tema, kursus, dan hak akses. Perbedaan posisi tidak selalu berarti ada masalah. Cocokkan nama menu dan hasil tindakannya terlebih dahulu.

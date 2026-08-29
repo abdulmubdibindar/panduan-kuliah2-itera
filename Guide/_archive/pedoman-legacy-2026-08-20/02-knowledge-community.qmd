@@ -1,0 +1,21 @@
+# Knowledge & Community Management {#sec-knowledge-community}
+
+::: {.callout-warning}
+Bab ini masih kerangka judul — isinya akan ditulis setelah @sec-kepesertaan disetujui. Label bagian di bawah ini sudah final supaya referensi silang dari bab lain tidak berubah nanti.
+:::
+
+## Memanfaatkan Block {#sec-block}
+
+Akan membahas *block* yang aktif (Timeline, Calendar) dan cara menambah *block* lain untuk efisiensi penyampaian informasi.
+
+## Materi untuk Berbagai Media {#sec-materi-media}
+
+Akan membahas jenis *resource*/*activity* untuk bahan tayang, video ajar, dan kemungkinan tutorial interaktif.
+
+## Mengorganisasi Tampilan Kelas {#sec-tampilan-kelas}
+
+Akan membahas format kursus (Custom sections, Weekly, Single activity, Social), *hidden sections*, dan pengaturan lain yang memengaruhi *user experience* mahasiswa.
+
+## Integrasi Google Calendar untuk Reminder Tugas {#sec-google-calendar}
+
+Akan membahas ekspor kalender Moodle (iCal feed) untuk di-*subscribe* dari Google Calendar.

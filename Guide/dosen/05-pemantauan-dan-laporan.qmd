@@ -1,0 +1,98 @@
+# Memantau Pengumpulan Tugas dan Jejak Aktivitas Mahasiswa {#sec-dosen-pemantauan-laporan}
+
+<!-- Sumber internal: Guide/spec.md D-09; Guide/KULIAH2.md §Asesmen, §Jejak Digital; Code/moodle_docs/Assignment.md; Assignment_settings.md; Activity_completion.md; Reports.md; temuan sandbox course 917: Grading summary (Participants, Submitted, Needs grading), tabel Submissions (action=grading), dan filter Reports -> Logs. -->
+
+Setelah instrumen penugasan dan materi pembelajaran diterbitkan, dosen pengampu dan asisten pengajar perlu memantau progres penyerahan berkas tugas, memeriksa kepatuhan batas waktu (*Due date*), serta menelusuri keaktifan mahasiswa dalam mengakses bahan ajar.
+
+Platform New E-Learning ITERA menyediakan ringkasan terpusat (*Grading summary*), tabel pemantauan pengumpulan (*Submissions table*), mekanisme perpanjangan batas waktu (*Grant extension*), serta laporan jejak digital (*Reports & Logs*).
+
+## Memeriksa status dan kelengkapan pengumpulan tugas {#sec-dosen-pantau-tugas}
+
+<!-- Sumber internal: Code/moodle_docs/Assignment.md; Assignment_settings.md; temuan sandbox course 917: halaman mod/assign/view.php memuat kotak Grading summary dan tombol Grade / View all submissions. -->
+
+Melalui halaman penugasan, Anda dapat memantau secara langsung jumlah mahasiswa yang sudah mengirimkan berkas (*Submitted*) dan berkas yang siap diperiksa (*Needs grading*). Modul penugasan (**Assignment**) harus sudah dibuat pada mata kuliah yang bersangkutan, dan Anda memerlukan peran **Dosen (Teacher)** atau **Asisten Pengajar (Non-editing teacher)** — keduanya dapat membuka ringkasan ini. Buka halaman utama mata kuliah, lalu ikuti langkah berikut:
+
+1. Klik nama penugasan yang dituju, misalnya `Tugas 1: Analisis Struktur Ruang Kota`.
+2. Perhatikan panel **Grading summary** yang merangkum kondisi kelas:
+   - **Participants**: Jumlah total mahasiswa yang terdaftar di kelas atau kelompok yang dipilih.
+   - **Submitted**: Jumlah mahasiswa yang telah berhasil mengunggah dan menyerahkan berkas tugas.
+   - **Needs grading**: Jumlah berkas tugas yang telah diserahkan namun belum diberi nilai.
+   - **Time remaining**: Sisa waktu pengerjaan tugas sebelum melewati batas tenggat (*Due date*).
+3. Untuk memeriksa rincian berkas dan status per mahasiswa, pilih tombol **View all submissions** atau gulir ke bawah halaman.
+
+Panel **Grading summary** menyajikan rekapitulasi data kepesertaan, jumlah penyerahan tugas, serta sisa waktu pengumpulan seperti terlihat pada @fig-dosen-summary-tugas-01.
+
+![Ringkasan status pengumpulan tugas (*Grading summary*) pada halaman penugasan dosen](assets/images/pemantauan-dan-laporan/01-ringkasan-pengumpulan-tugas.png){#fig-dosen-summary-tugas-01 fig-pos="H" width="85%"}
+
+Jika angka **Participants** bernilai `0`, periksa penyaring kelompok (*Separate groups*) di bagian atas halaman dan pastikan Anda memilih kelas paralel yang sesuai, misalnya `Kelas RA` atau `All participants`. Jika kolom **Time remaining** menampilkan tulisan berwarna merah seperti `Assignment is overdue by ...`, batas waktu *Due date* sudah berakhir dan penyerahan tugas baru akan dicatat terlambat. Setelah ringkasan ini terbaca, lanjutkan ke tabel daftar pengumpulan untuk memeriksa berkas yang diserahkan dan meninjau keterlambatan.
+
+## Memantau tabel pengumpulan dan penanda keterlambatan {#sec-dosen-tabel-submission}
+
+<!-- Sumber internal: Code/moodle_docs/Assignment.md; temuan sandbox course 917: tabel gradingtable menampilkan kolom Status, Last modified, File submissions, Quick grading, dan Actions. -->
+
+Tabel pengumpulan (*Submissions table*) menampilkan rincian berkas yang diunggah mahasiswa, waktu pengiriman terakhir, serta status keterlambatan jika tugas dikirim setelah batas *Due date*. Anda perlu berada pada halaman rincian pengumpulan tugas (`action=grading`); dosen maupun asisten pengajar sama-sama berwenang mengunduh dan memeriksa berkas pengumpulan di sini. Buka **Halaman Tugas → View all submissions**, lalu ikuti langkah berikut:
+
+1. Gunakan penyaring di bagian atas tabel untuk menyaring tampilan:
+   - **Filter by name**: Menyaring mahasiswa berdasarkan huruf awal nama depan atau nama belakang.
+   - **Status**: Menyaring berdasarkan status penyerahan (*Submitted*, *Not submitted*, *Requires grading*, atau *Granted extension*).
+2. Periksa kolom-kolom utama tabel:
+   - **Status**: Menunjukkan status penyerahan, seperti `Submitted for grading` (hijau), `Draft` (kuning), atau `No submission`.
+   - **Last modified (submission)**: Mencatat tanggal dan jam persis mahasiswa mengunggah atau memperbarui berkas.
+   - **File submissions**: Memuat tautan nama berkas dokumen (misalnya `Laporan_Analisis_Struktur_Ruang.pdf`) yang dapat diklik untuk diunduh.
+   - **Time remaining / Late**: Jika mahasiswa mengumpulkan setelah *Due date*, sistem secara otomatis memberi tanda teks merah `Submitted ... late`. Jika dikumpulkan lebih awal, sistem mencatat `Submitted ... early`.
+3. Untuk mengunduh seluruh berkas mahasiswa sekaligus dalam satu berkas ZIP, pilih menu **Actions** di atas tabel, lalu pilih **Download all submissions**.
+
+Tabel **Submissions** menyajikan daftar pengumpulan mahasiswa secara terstruktur lengkap dengan nama berkas, waktu pengiriman, dan status penyerahan seperti terlihat pada @fig-dosen-tabel-submission-01.
+
+![Tabel pemantauan pengumpulan tugas mahasiswa (*View all submissions*)](assets/images/pemantauan-dan-laporan/02-tabel-pengumpulan-dan-keterlambatan.png){#fig-dosen-tabel-submission-01 fig-pos="H" width="90%"}
+
+Jika berkas mahasiswa berstatus `Draft (not submitted)`, mahasiswa baru mengunggah berkas ke draf penyimpanan tetapi belum menekan tombol konfirmasi **Submit assignment** — Anda dapat mengingatkan mahasiswa tersebut atau tetap menilai drafnya kalau batas waktu sudah habis. Jika tautan berkas di kolom **File submissions** tidak dapat diunduh, pastikan format berkas didukung dan koneksi jaringan stabil. Perlu diingat bahwa pengubahan pengaturan umum batas waktu tugas hanya dapat dilakukan peran **Teacher**, bukan **Non-editing teacher**. Kalau ada mahasiswa dengan kendala khusus yang sah, lanjutkan ke pemberian dispensasi perpanjangan waktu.
+
+## Mengatur perpanjangan waktu pengumpulan (*Grant Extension*) {#sec-dosen-perpanjangan-waktu}
+
+<!-- Sumber internal: Code/moodle_docs/Assignment_settings.md §Granting extensions; temuan menu titik tiga pada kolom Grade di tabel grading. -->
+
+Fitur **Grant extension** memungkinkan Anda memberikan perpanjangan batas waktu pengumpulan khusus kepada perorangan mahasiswa — misalnya karena sakit atau penugasan institusi — tanpa mengubah jadwal *Due date* bagi mahasiswa lain di kelas. Mahasiswa yang bersangkutan harus sudah terdaftar pada mata kuliah dan penugasan tersebut, dan pemberian perpanjangan adalah kewenangan akademis dosen pengampu: Anda harus masuk dengan peran **Teacher**, karena **Non-editing teacher** tidak mempunyai izin ini. Buka **Halaman Tugas → View all submissions**, lalu ikuti langkah berikut:
+
+1. Cari baris mahasiswa yang akan diberikan perpanjangan waktu.
+2. Pada kolom **Edit** (ikon titik tiga **⋮** di samping kolom nilai), pilih opsi **Grant extension**.
+3. Pada formulir perpanjangan yang muncul, centang kotak **Enable** pada bagian **Extension date**.
+4. Tentukan tanggal dan jam batas akhir perpanjangan yang diizinkan.
+5. Pilih **Save changes**.
+
+Pada baris mahasiswa tersebut, kolom status akan menampilkan penanda `Extension granted until [Tanggal & Jam]`. Mahasiswa itu dapat mengunggah berkas hingga batas perpanjangan tercapai tanpa ditandai terlambat.
+
+Jika menu **Grant extension** tidak muncul pada baris mahasiswa, pastikan akun Anda berperan **Teacher**, bukan **Non-editing teacher**. Jika opsi tanggal tidak dapat diubah, pastikan kotak centang **Enable** di samping tanggal perpanjangan sudah diaktifkan. Setelah dispensasi diberikan, lanjutkan dengan menelusuri laporan jejak digital untuk memantau kapan mahasiswa mengakses bahan ajar dan panduan.
+
+## Melacak riwayat pembukaan panduan dan materi (*Reports & Logs*) {#sec-dosen-lacak-log}
+
+<!-- Sumber internal: Guide/spec.md D-09 butir 2; Guide/KULIAH2.md §Jejak Digital; Code/moodle_docs/Reports.md; temuan sandbox course 917: menu Reports -> Logs (report/log/index.php) mencatat waktu, konteks event, komponen, nama event, dan deskripsi pembukaan modul. -->
+
+Anda dapat memverifikasi apakah seorang mahasiswa benar-benar sudah membuka dan membaca panduan kuliah, materi ajar, atau petunjuk tugas melalui menu **Reports → Logs**. Setiap interaksi klik dan pembukaan dokumen dicatat sistem secara otomatis beserta cap waktu persisnya. Anda perlu berada pada ruang mata kuliah yang Anda kelola dengan peran **Dosen (Teacher)** atau **Asisten Pengajar (Non-editing teacher)**. Buka **More → Reports → Logs** dari bilah menu mata kuliah, lalu ikuti langkah berikut:
+
+1. Atur parameter pencarian pada formulir penyaring:
+   - **Course**: Pilih mata kuliah yang bersangkutan.
+   - **Groups**: Saring berdasarkan kelompok kelas paralel, misalnya `Kelas RA` atau `All groups`.
+   - **Participants**: Pilih **All participants** untuk melihat seluruh kelas, atau pilih nama mahasiswa tertentu untuk penelusuran individual.
+   - **Days**: Pilih tanggal tertentu, misalnya tanggal pelaksanaan kuliah, atau pilih `All days`.
+   - **Activities**: Pilih modul pembelajaran tertentu, misalnya `Assignment: Tugas 1` atau `Page: Silabus`.
+   - **Actions**: Pilih jenis tindakan, misalnya `All actions` atau `View`.
+2. Pilih tombol **Get these logs**.
+3. Telusuri tabel riwayat log yang ditampilkan:
+   - **Time**: Menunjukkan tanggal, jam, menit, dan detik persis saat aktivitas terjadi.
+   - **Event context**: Menunjukkan lokasi modul atau *section* yang dibuka.
+   - **Component**: Jenis komponen sistem, seperti `Assignment`, `Page`, `URL`, atau `System`.
+   - **Event name**: Nama kejadian teknis, seperti `Course module viewed` (materi dibuka), `The status of the submission has been viewed` (halaman tugas dilihat), atau `A submission has been submitted` (berkas tugas dikirim).
+   - **Description**: Deskripsi naratif rinci mengenai aktivitas yang dilakukan pengguna.
+
+Halaman laporan menyajikan formulir penyaring beserta tabel rekaman jejak digital yang membuktikan kapan mahasiswa membuka materi atau mengirimkan tugas seperti terlihat pada @fig-dosen-laporan-logs-01.
+
+![Laporan jejak aktivitas peserta (*Reports → Logs*) yang mencatat riwayat pembukaan modul pembelajaran](assets/images/pemantauan-dan-laporan/03-laporan-aktivitas-peserta.png){#fig-dosen-laporan-logs-01 fig-pos="H" width="90%"}
+
+::: {.callout-note title="Catatan"}
+#### Sifat Otentik dan Permanen Rekaman Log {.unnumbered .unlisted}
+
+Rekaman log aktivitas bersifat hanya-baca dan tidak dapat dimanipulasi atau dihapus oleh dosen maupun mahasiswa. Karena itu log berfungsi sebagai bukti otentik akademik dalam penanganan sengketa pengumpulan tugas atau evaluasi keaktifan mahasiswa.
+:::
+
+Jika tabel log kosong setelah Anda menekan **Get these logs**, periksa kembali kombinasi penyaring tanggal dan aktivitas, dan pastikan rentang waktu yang dipilih mencakup saat perkuliahan berlangsung. Jika Anda perlu memantau aktivitas yang sedang berlangsung, pilih menu **Live logs** yang menampilkan rekaman kejadian satu jam terakhir. Jika yang Anda perlukan adalah rekapitulasi jumlah klik dan pembacaan materi secara agregat per dokumen, buka **Activity report** atau **Course participation**. Setelah berkas tugas terhimpun dan batas pengumpulan tercapai, Anda dapat melanjutkan ke tahap pemeriksaan dan penginputan nilai (*Grading*).

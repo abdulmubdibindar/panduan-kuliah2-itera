@@ -1,0 +1,40 @@
+# === Rahasia dan artefak sesi ber-login ===
+Code/cookie.txt
+
+# === Dump aksesibilitas Playwright (sekali pakai, dari sesi ber-login) ===
+/*.yml
+.playwright-cli/
+Code/.playwright-cli/
+
+# === Keluaran render dan singgahan Quarto ===
+.quarto/
+Guide/dosen/_book/
+Guide/mahasiswa/_book/
+Guide/index.typ
+Guide/dosen/index.typ
+
+# PDF gabungan sengaja diterbitkan; sisanya di _book/ tidak
+Guide/_book/*
+!Guide/_book/Panduan-Moodle-ITERA.pdf
+
+# === Eksperimen OBE/CPMK — ditunda sampai pengujian Gradebook selesai ===
+Guide/eksperimen-obe-cpmk/
+
+# === Berkas kerja sementara ===
+Guide/*todo*.md
+Guide/20260828-panduan-verifikasi.md
+Guide/HANDOFF-SISA-TUGAS.md
+Guide/test_out.pdf
+/HANDOFF-PENERBITAN-GIT.md
+
+# === Perkakas lokal, disalin ke repo tetapi tidak diterbitkan ===
+sync-ke-github.*
+
+# === Konfigurasi editor dan mesin ===
+.obsidian/
+.claude/settings.local.json
+__pycache__/
+*.py[cod]
+Thumbs.db
+.DS_Store
+_assets/.$*.bkp

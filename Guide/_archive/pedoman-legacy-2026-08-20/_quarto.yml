@@ -1,0 +1,36 @@
+project:
+  type: book
+
+book:
+  title: "Panduan Penggunaan Moodle ITERA"
+  subtitle: "kuliah2.itera.ac.id — untuk Dosen"
+  author: "Muhammad Abdul Bindar"
+  date: today
+  chapters:
+    - index.qmd
+    - 01-kepesertaan.qmd
+    - 02-knowledge-community.qmd
+    - 03-asesmen.qmd
+    - 04-jejak-digital.qmd
+    - 05-obe-cpmk.qmd
+
+lang: id
+date-format: "D MMMM YYYY"
+
+language:
+  callout-note-title: "Catatan"
+  callout-tip-title: "Kiat"
+  callout-warning-title: "Perhatian"
+  callout-important-title: "Penting"
+  callout-caution-title: "Hati-hati"
+
+format:
+  pdf:
+    documentclass: scrreprt
+    toc: true
+    number-sections: true
+    colorlinks: true
+    fig-cap-location: bottom
+    mainfont: "Carlito"
+    sansfont: "Playfair Display"
+    monofont: "JetBrains Mono"

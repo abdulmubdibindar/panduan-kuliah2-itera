@@ -1,0 +1,9 @@
+Resources
+Book_resource
+File_resource
+Folder_resource
+IMS_content_package
+Page_resource
+Text_and_media_area
+URL_resource
+Assignment_settings

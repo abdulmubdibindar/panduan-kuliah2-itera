@@ -1,0 +1,4 @@
+- Judul panduan diselaraskan: **Panduan Penggunaan Platform *New E-Learning* ITERA**, subjudul mengikuti Penerima: **Dosen & Asisten** dan **Mahasiswa**
+- Jangan ada logo ITERA di laman **"Tentang Panduan"**
+- Gunakan lembar pengesahan yang ada dalam [[01 PENDIDIKAN/PL25-41003 Analitika Perkotaan/2026/AGENTS-ANKOT-2026|AGENTS-ANKOT-2026]] untuk format lembar pengesahan 
+- Pakai indentasi untuk setiap level di Table of Content

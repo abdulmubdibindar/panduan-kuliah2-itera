@@ -1,0 +1,17 @@
+logo:
+  medium: images/logo-itera.png
+
+color:
+  foreground: "#20262D"
+  background: "#FFFFFF"
+  primary: "#003B59"
+  secondary: "#D66B1F"
+  tertiary: "#E8F0F3"
+
+typography:
+  base: "Carlito"
+  headings:
+    family: "Playfair Display"
+    weight: 700
+    color: "#003B59"
+  monospace: "JetBrains Mono"

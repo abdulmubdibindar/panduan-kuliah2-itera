@@ -1,0 +1,15 @@
+# Tentang Panduan Ini {.unnumbered}
+
+`kuliah2.itera.ac.id` merupakan layanan *New E-Learning* ITERA yang dikembangkan dengan platform Moodle. Moodle adalah sistem pengelolaan pembelajaran (*Learning Management System* atau LMS) untuk mengelola bahan ajar, kegiatan kelas, tugas, ujian, nilai, dan komunikasi pembelajaran dalam satu lingkungan daring.
+
+Panduan ini membantu dosen dan asisten menggunakan layanan tersebut tanpa harus memahami administrasi teknis Moodle. Ikuti setiap langkah secara berurutan dan pastikan nama akun serta mata kuliah sudah benar sebelum mengubah isi atau pengaturan.
+
+## Cara membaca panduan
+
+Nama menu dan tombol ditulis tebal, seperti **Calendar**. Alamat situs serta teks teknis ditulis dengan huruf monospace, seperti `https://kuliah2.itera.ac.id`. Tampilan menu dapat berbeda menurut peran dan kewenangan akun.
+
+::: {.callout-important title="Perhatian"}
+#### Batas Penggunaan Panduan Dosen {.unnumbered .unlisted}
+
+Periksa nama mata kuliah sebelum menyalakan mode sunting. Ubah hanya mata kuliah yang memang menjadi tanggung jawab Anda.
+:::

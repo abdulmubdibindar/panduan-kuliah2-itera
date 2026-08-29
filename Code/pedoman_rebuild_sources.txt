@@ -1,0 +1,40 @@
+# Daftar sempit kandidat sumber resmi docs.moodle.org/502/en yang belum tersedia
+# dalam korpus lokal dan dibutuhkan untuk pembangunan ulang pedoman Moodle ITERA.
+# Satu judul laman per baris; baris berawalan '#' dan baris kosong diabaikan.
+# Dipakai lewat: python method_claude.py --pages-file pedoman_rebuild_sources.txt --cookie-file cookie.txt
+#
+# Audit 2026-08-20: Resources, Assignment_settings, Student_role,
+# Non-editing_teacher_role, Using_badges, dan Managing_badges dikonfirmasi dari
+# tautan silang dalam korpus lokal. Judul lain masih kandidat sampai MediaWiki API
+# dapat diakses kembali; ekstraktor akan mencatat API error tanpa membuat hasil palsu.
+
+# Resources dan tiap resource standar
+Resources
+Book_resource
+File_resource
+Folder_resource
+IMS_content_package
+Page_resource
+Text_and_media_area
+URL_resource
+
+# Assignment
+Assignment_settings
+
+# Peran
+Student_role
+Non-editing_teacher_role
+
+# Kalender dan laporan
+Calendar
+Logs
+Course_participation
+User_report
+
+# Kandidat plugin pilihan/pembentukan kelompok secara mandiri; verifikasi API wajib
+Group_choice_activity
+Group_self-selection_activity
+
+# Prosedur badges
+Using_badges
+Managing_badges

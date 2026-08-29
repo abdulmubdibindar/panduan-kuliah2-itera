@@ -1,0 +1,92 @@
+# Peran, Kewenangan, dan Alur Kerja Asisten {#sec-asisten-kewenangan}
+
+<!-- Sumber internal: Guide/spec.md D-04, D-09, D-10; Guide/KULIAH2.md §Kepesertaan, §Asesmen, §Memeriksa & memberi nilai asesmen; 20260827-todo.md. -->
+
+Asisten pengajar memegang peran penting dalam mendampingi dosen pengampu, memfasilitasi jalannya praktikum, serta memeriksa hasil pekerjaan mahasiswa. Pada platform New E-Learning ITERA, hak akses asisten diatur secara spesifik agar dapat menjalankan tugas asistensi dan penilaian secara mandiri tanpa mengubah konfigurasi mata kuliah yang telah ditetapkan oleh dosen penanggung jawab.
+
+## Hakikat dan Peran Akun Asisten {#sec-asisten-hakikat}
+
+Di lingkungan ITERA, asisten pada hakikatnya adalah mahasiswa aktif yang diberikan mandat akademik tambahan pada mata kuliah tertentu. Oleh karena itu, prinsip pengelolaan akun asisten adalah sebagai berikut:
+
+1. **Satu Akun Terpadu**: Asisten menggunakan akun SSO ITERA yang sama persis dengan akun mahasiswa miliknya. Tidak diperlukan pembuatan akun baru atau akun lokal terpisah.
+2. **Peran Ganda Lintas Mata Kuliah**: Di halaman **My courses**, mata kuliah tempat Anda bertindak sebagai asisten akan tampil berdampingan dengan mata kuliah yang Anda tempuh sebagai mahasiswa reguler. Sistem mengenali kewenangan Anda secara otomatis berdasarkan peran yang ditetapkan pada masing-masing kursus:
+   - Sebagai **Mahasiswa (Student)** pada mata kuliah yang Anda ambil di semester berjalan.
+   - Sebagai **Asisten (Non-editing teacher)** pada mata kuliah tempat Anda ditugaskan membantu dosen.
+3. **Pemisahan Sesi Pengujian**: Jika Anda perlu menguji alur pengumpulan tugas dari sudut pandang mahasiswa sambil menilai sebagai asisten, pengujian harus dilakukan pada dua mata kuliah yang berbeda atau melalui jendela peramban penyamaran (*incognito/private window*) untuk menghindari tumpang-tindih rekaman sesi.
+
+## Mengenali Antarmuka Mata Kuliah Asisten {#sec-asisten-antarmuka}
+
+Ketika membuka mata kuliah asistensi, antarmuka yang Anda temui lebih ringkas dibandingkan tampilan dosen penuh, seperti terlihat pada @fig-asisten-antarmuka-01.
+
+![Tampilan menu navigasi mata kuliah bagi akun asisten (*Non-editing teacher*): memuat **Course**, **Participants**, **Grades**, dan **More** tanpa menu **Settings**](assets/images/01-antarmuka-asisten.png){#fig-asisten-antarmuka-01 fig-pos="H" width="100%"}
+
+Menu navigasi utama di dalam mata kuliah asisten terdiri atas:
+
+- **Course**: Membuka halaman utama perkuliahan, membaca bahan ajar, menyimak instruksi tugas, serta membuka modul praktikum.
+- **Participants**: Melihat daftar lengkap peserta mata kuliah, peran masing-masing pengguna, serta keanggotaan kelas paralel (`Kelas RA`, `Kelas RB`) atau kelompok tugas.
+- **Grades**: Membuka buku nilai (*Gradebook*), memeriksa tabel rekapitulasi nilai seluruh mahasiswa (*Grader report*), dan melihat rincian nilai per individu (*User report*).
+- **More**: Membuka laporan aktivitas kelas (*Reports → Logs*) untuk melacak keaktifan peserta dan jejak pembukaan berkas panduan.
+
+::: {.callout-note title="Catatan"}
+#### Ketiadaan Mode Sunting Tingkat Mata Kuliah {.unnumbered .unlisted}
+
+Akun asisten tidak memiliki menu **Settings** dan tidak memiliki kendali **Edit mode** di tingkat mata kuliah. Hal ini dirancang secara sengaja oleh sistem Moodle untuk menjaga agar nama mata kuliah, format silabus, tanggal ketersediaan, serta metode pendaftaran tidak berubah secara tidak sengaja.
+:::
+
+## Ruang Lingkup dan Batasan Kewenangan {#sec-asisten-kewenangan-batas}
+
+Kewenangan asisten diatur dengan batas yang tegas. Tabel @tbl-asisten-kewenangan merangkum hal-hal yang dapat dan tidak dapat dilakukan oleh asisten pengajar:
+
+| Ranah Pengelolaan | Kewenangan Asisten | Yang Menjadi Hak Dosen Penuh |
+|---|---|---|
+| **Bahan Ajar (*Resources*)** | Membantu mengunggah materi modul dan panduan praktikum pada bagian yang telah disiapkan | Membuat, menghapus, atau mengubah urutan *section* dan struktur kurikulum kursus |
+| **Penugasan (*Assignment*)** | Memeriksa dokumen tugas yang dikumpulkan mahasiswa dan memberikan nilai beserta catatan evaluasi | Menentukan bobot nilai akhir, mengubah batas waktu pengumpulan global (*Due date / Cut-off date*), dan mengatur perpanjangan waktu |
+| **Ujian Daring (*Quiz*)** | Memeriksa hasil pengerjaan kuis/ujian, mengoreksi jawaban esai, dan meninjau riwayat percobaan (*Attempts*) | Membuat kuis baru, menyusun butir soal di Bank Soal, serta mengatur konfigurasi *Safe Exam Browser* (SEB) |
+| **Kepesertaan (*Enrolment*)** | Melihat daftar mahasiswa dan mengecek pembagian kelompok di menu **Participants** | Mendaftarkan peserta secara manual, menerbitkan kunci pendaftaran mandiri (*enrolment key*), serta membuat kelas paralel (*Groups*) |
+| **Rekapitulasi Nilai** | Mengisi nilai pada formulir penilaian dan memeriksa buku nilai (*Grades*) | Menyetel formula perhitungan nilai akhir, mengunci (*lock*) buku nilai, dan mengekspor nilai resmi ke format spreadsheet prodi |
+
+: Pembagian kewenangan operasional antara asisten dan dosen penanggung jawab {#tbl-asisten-kewenangan}
+
+::: {.callout-important title="Perhatian"}
+#### Permintaan Pengunggahan Materi atau Penugasan {.unnumbered .unlisted}
+
+Jika dosen meminta Anda untuk mengunggah materi modul atau membuat penugasan baru pada mata kuliah, mintalah beliau untuk mengubah peran Anda dari *Non-editing teacher* menjadi *Teacher* terlebih dahulu. Jangan lupa mengingatkan beliau untuk mengembalikan peran Anda kembali setelah proses pengunggahan selesai.
+:::
+
+## Alur Kerja Penilaian Tugas (*Grading Assignment*) {#sec-asisten-menilai-tugas}
+
+Tugas utama asisten umumnya adalah memeriksa kelengkapan berkas tugas mahasiswa dan memberikan nilai objektif beserta catatan perbaikan (*feedback*). Ikuti langkah kerja berikut:
+
+1. Buka mata kuliah dari menu **My courses**.
+2. Pilih judul penugasan (*Assignment*) yang hendak dinilai pada *section* terkait.
+3. Halaman tugas akan menampilkan panel **Grading summary** yang memuat:
+   - **Participants**: Jumlah total mahasiswa terdaftar.
+   - **Submitted**: Jumlah mahasiswa yang telah menyerahkan tugas.
+   - **Needs grading**: Jumlah berkas tugas yang belum dinilai.
+4. Pilih tombol **View all submissions** untuk melihat tabel rekapitulasi penyerahan seluruh peserta, atau langsung pilih **Grade** untuk memulai penilaian berkas pertama.
+5. Pada layar penilaian (*Grading screen*):
+   - Dokumen PDF atau berkas unggahan mahasiswa akan tampil di panel kiri.
+   - Pada panel kanan, periksa waktu penyerahan berkas (apakah tepat waktu atau terlambat).
+   - Masukkan skor nilai angka pada kolom **Grade** (skala 0–100 sesuai rubrik dosen).
+   - Ketikkan catatan evaluasi, kekurangan dokumen, atau saran perbaikan pada kotak **Feedback comments**.
+6. Pilih **Save changes** untuk menyimpan nilai saat ini, atau pilih **Save and show next** untuk langsung berpindah ke berkas mahasiswa berikutnya tanpa harus kembali ke halaman awal.
+
+::: {.callout-tip title="Kiat Praktis"}
+#### Menjaga Konsistensi Penilaian {.unnumbered .unlisted}
+
+Sebelum memulai penilaian, pastikan Anda telah menyepakati rubrik dan kunci jawaban bersama dosen penanggung jawab. Berikan catatan umpan balik yang konstruktif pada kotak *Feedback comments* agar mahasiswa memahami dasar pemberian nilai dan mengetahui bagian yang perlu diperbaiki.
+:::
+
+## Memeriksa Rekam Jejak dan Laporan Keaktifan {#sec-asisten-laporan}
+
+Jika mahasiswa melaporkan kendala teknis saat mengunduh modul praktikum atau menyerahkan tugas, asisten dapat memverifikasi aktivitas mahasiswa melalui log sistem:
+
+1. Buka menu **More** pada navigasi atas mata kuliah, lalu pilih **Reports → Logs**.
+2. Pada formulir penyaring:
+   - Pilih nama mahasiswa yang bersangkutan pada menu **All participants**.
+   - Pilih modul atau penugasan terkait pada menu **All activities**.
+   - Pilih tanggal perkuliahan pada menu **All days**.
+3. Pilih **Get these logs**.
+4. Sistem akan menampilkan tabel rekaman digital yang memuat tanggal, jam persis, alamat IP, serta tindakan yang dilakukan mahasiswa (misalnya `Course viewed` atau `The status of the submission has been viewed`).
+
+Catatan ini bersifat permanen dan menjadi rujukan faktual bagi asisten dan dosen dalam menyelesaikan klarifikasi administratif kepesertaan kelas.

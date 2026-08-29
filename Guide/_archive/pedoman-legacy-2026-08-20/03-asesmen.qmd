@@ -1,0 +1,23 @@
+# Asesmen {#sec-asesmen}
+
+::: {.callout-warning}
+Bab ini masih kerangka judul — isinya akan ditulis setelah @sec-kepesertaan disetujui. Label bagian di bawah ini sudah final supaya referensi silang dari bab lain tidak berubah nanti.
+:::
+
+## Membuat Asesmen {#sec-membuat-asesmen}
+
+### Jenis Activity dan Konteks Asesmen yang Cocok {#sec-jenis-activity}
+
+Akan membahas jenis-jenis *Activity* Moodle yang aktif di kuliah2.itera.ac.id (Assignment, Quiz, Workshop, dll.) dan konteks asesmen yang cocok untuk tiap jenis.
+
+### Mengatur Ujian dengan Safe Exam Browser {#sec-seb}
+
+Akan membahas pengaturan Safe Exam Browser (SEB) pada Quiz — perlu verifikasi lanjutan karena pencarian awal di Site administration tidak menemukan hasil terkait SEB.
+
+## Memeriksa, Memberi Nilai, dan Mengedit Asesmen {#sec-grading}
+
+Akan membahas alur *grading*, termasuk tips efisiensi seperti *quick grading* dan memberi nilai sama untuk beberapa mahasiswa sekaligus.
+
+## Menarik Rekapitulasi Nilai {#sec-rekap-nilai}
+
+Akan membahas ekspor nilai lewat **Grades → Export** (OpenDocument, Plain text, Excel, XML) untuk penyusunan nilai akhir.

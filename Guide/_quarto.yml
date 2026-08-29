@@ -1,0 +1,76 @@
+project:
+  type: book
+  output-dir: _book
+  brand: assets/brand.yml
+
+book:
+  title: "Panduan Penggunaan Platform *New E-Learning* ITERA"
+  subtitle: "Dosen, Asisten, dan Mahasiswa"
+  date: "2026-08-27"
+  output-file: "Panduan-Moodle-ITERA"
+  chapters:
+    - index.qmd
+    - prakata.qmd
+    - tentang-panduan.qmd
+    - part: "Bagian I — Panduan untuk Dosen"
+      chapters:
+        - dosen/01-login-orientasi.qmd
+        - dosen/02-mata-kuliah.qmd
+        - dosen/03-kepesertaan-kelas-dan-peran.qmd
+        - dosen/04-organisasi-materi-dan-asesmen.qmd
+        - dosen/05-pemantauan-dan-laporan.qmd
+    - part: "Bagian II — Panduan untuk Asisten"
+      chapters:
+        - asisten/01-kewenangan-dan-alur-kerja.qmd
+    - part: "Bagian III — Panduan untuk Mahasiswa"
+      chapters:
+        - mahasiswa/login-dan-orientasi.qmd
+        - mahasiswa/bergabung-dan-kelompok.qmd
+        - mahasiswa/materi-dan-aktivitas.qmd
+        - mahasiswa/pengumpulan-tugas.qmd
+
+lang: id
+date-format: "D MMMM YYYY"
+
+crossref:
+  chapters: true
+  fig-title: "Gambar"
+  tbl-title: "Tabel"
+  sec-prefix: "Bagian"
+
+language:
+  toc-title-document: "Daftar Isi"
+  callout-note-title: "Catatan"
+  callout-tip-title: "Kiat Praktis"
+  callout-warning-title: "Peringatan"
+  callout-important-title: "Perhatian"
+  callout-caution-title: "Peringatan"
+  section-title-footnotes: "Catatan Kaki"
+
+format:
+  typst:
+    papersize: a4
+    page-numbering: "1"
+    # Daftar Isi tidak lagi dicetak oleh templat. Sejak restrukturisasi urutan
+    # bagian, `#outline(...)` dipanggil dari `prakata.qmd`; nilai toc-depth dan
+    # toc-indent di bawah ini menjadi acuan angka yang disalin ke berkas itu.
+    toc: true
+    toc-depth: 3
+    toc-indent: 1.5em
+    number-sections: true
+    callout-icon: true
+    mainfont: "Carlito"
+    sansfont: "Playfair Display"
+    monofont: "JetBrains Mono"
+    font-paths:
+      - _shared/fonts
+    fontsize: 11pt
+    margin:
+      x: 25mm
+      y: 25mm
+    include-in-header:
+      - _shared/typst-header.typ
+    template-partials:
+      - _shared/typst/typst-template.typ
+      - _shared/typst/typst-show.typ
+    keep-typ: true

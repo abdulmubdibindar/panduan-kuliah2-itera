@@ -1,0 +1,27 @@
+# Prakata {.unnumbered}
+
+Kami memanjatkan puji serta syukur kami ke hadirat Allah Subhanahuwata'ala yang atas karunia-Nya, kami dapat mencurahkan perhatian dan tenaga kami sehingga terbit panduan penggunaan *New E-Learning* ITERA ini. Panduan ini lahir dari keresahan kami atas ketiadaan panduan untuk menggunakan *platform* sekuat `kuliah2.itera.ac.id` yang jika manfaatnya diketahui, kami yakin dapat meningkatkan kinerja pembelajaran kita.
+
+Panduan ini tentunya masih jauh dari kata sempurna. Oleh karena itu, kami sangat terbuka untuk segala kritik dan saran yang dapat membuat panduan ini lebih baik lagi. Namun demikian, kami tentu berharap panduan yang ada ini dapat bermanfaat bagi seluruh civitas akademika ITERA dalam memaksimalkan pengalaman pembelajarannya.
+
+```{=typst}
+#v(1.5em)
+#align(right)[
+  Lampung Selatan, Agustus 2026 \
+  Tim Penyusun
+]
+```
+{{< pagebreak >}}
+
+```{=typst}
+// Daftar Isi ditempatkan tepat sesudah Prakata, mengikuti urutan naskah.
+// Nilai `depth` dan `indent` disamakan dengan `toc-depth` serta `toc-indent`
+// pada `_quarto.yml`.
+#pagebreak(weak: true)
+#outline(
+  title: [Daftar Isi],
+  depth: 3,
+  indent: 1.5em,
+)
+```
+{{< pagebreak >}}

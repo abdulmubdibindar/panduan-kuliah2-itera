@@ -1,0 +1,19 @@
+# Daftar judul laman docs.moodle.org (namespace 502/en) terkait pengaturan ujian
+# dengan Safe Exam Browser (SEB) beserta rumpun Quiz pendukungnya — bahan untuk
+# Bab 3 Asesmen, khususnya bagian "Mengatur Ujian dengan Safe Exam Browser".
+# Satu judul per baris; baris berawalan '#' dan baris kosong diabaikan.
+# Dipakai lewat: python method_claude.py --pages-file quiz_seb.txt --cookie-file cookie.txt
+
+# Inti SEB
+Safe_Exam_Browser
+
+# Pengaturan & keamanan kuis
+Quiz_settings
+Quiz_security
+E-examination_quick_guide
+Quiz_FAQ
+
+# Rumpun Quiz umum
+Building_Quiz
+Quiz_reports
+Quiz_activity

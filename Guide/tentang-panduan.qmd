@@ -1,0 +1,30 @@
+# Tentang Panduan Ini {.unnumbered}
+
+`kuliah2.itera.ac.id` merupakan layanan *New E-Learning* Institut Teknologi Sumatera (ITERA) yang dikembangkan dengan platform Moodle. Moodle adalah sistem pengelolaan pembelajaran (*Learning Management System* atau LMS) terpadu untuk memusatkan pengelolaan bahan ajar, interaksi kelas, penugasan, ujian daring, rekapitulasi nilai, dan komunikasi akademik dalam satu lingkungan digital resmi.
+
+Buku pedoman ini disusun sebagai rujukan operasional komprehensif bagi seluruh sivitas akademika ITERA. Untuk memberikan panduan yang tepat sasaran sesuai tanggung jawab masing-masing kalangan, dokumen ini terbagi ke dalam tiga bagian utama:
+
+- **Bagian I — Panduan untuk Dosen**: memuat prosedur pembuatan dan pembukaan mata kuliah, pengelolaan kepesertaan kelas paralel dan grup tugas, pengorganisasian *section* dan blok, pengunggahan seluruh ragam bahan ajar (*resources*), perancangan asesmen tugas (*Assignment*) dan ujian daring (*Quiz*) berbasis *Safe Exam Browser* (SEB), serta pemantauan pengumpulan dan rekam jejak digital mahasiswa.
+- **Bagian II — Panduan untuk Asisten**: memuat penjelasan peran asisten sebagai mahasiswa yang diberi kewenangan pengajar terbatas (*Non-editing teacher*), batasan hak akses pada antarmuka mata kuliah, serta prosedur praktis penambahan materi dan pemberian nilai/umpan balik atas pekerjaan peserta.
+- **Bagian III — Panduan untuk Mahasiswa**: memuat panduan masuk melalui SSO ITERA, pengenalan antarmuka dan penelusuran kursus, bergabung ke kelas paralel secara mandiri, memahami jenis materi dan ragam aktivitas perkuliahan, mengunggah dokumen tugas, menempuh kuis/ujian, serta membaca nilai dan catatan evaluasi dosen.
+
+## Cara Membaca Panduan {.unnumbered}
+
+Setiap prosedur dalam buku ini disusun secara mengalir dan berorientasi tindakan nyata di layar:
+
+1. **Nama menu, tombol, dan opsi formulir** dicetak **tebal**, seperti **My courses**, **Participants**, atau **Enrol users**.
+2. **Alamat tautan, istilah teknis, dan kode sistem** dicetak dengan huruf monospace, seperti `https://kuliah2.itera.ac.id` atau peran `Non-editing teacher`.
+3. **Pemberitahuan khusus** disajikan melalui kotak informasi (*callout*) yang membedakan catatan teknis (Catatan), kiat praktis (Kiat Praktis), peringatan kehati-hatian (Peringatan), dan ketentuan mutlak (Perhatian).
+4. Setiap langkah tindakan dilengkapi dengan tangkapan layar antarmuka asli dari sistem `kuliah2.itera.ac.id` yang telah disesuaikan agar bebas dari data pribadi (PII).
+
+::: {.callout-important title="Perhatian"}
+#### Batas Penggunaan dan Keamanan Akun {.unnumbered .unlisted}
+
+Periksa selalu identitas akun dan nama mata kuliah yang sedang aktif sebelum melakukan perubahan atau pengumpulan tugas. Gunakan hanya akun resmi SSO ITERA milik pribadi dan hindari menyimpan sesi login pada perangkat komputer yang dipakai bersama di lingkungan kampus.
+:::
+
+::: {.callout-warning title="Peringatan"}
+#### Tidak Perlu Baca Berurutan, Pilih Kasus yang Dibutuhkan {.unnumbered .unlisted}
+
+Walaupun panduan ini memiliki nomor di bab-nya, bukan berarti Anda harus membaca secara berurutan dari awal sampai akhir. Identifikasi kebutuhan Anda, lalu pilih kasus yang Anda butuhkan saat itu dengan membaca daftar isi, kemudian ikuti langkah-langkahnya.
+:::
