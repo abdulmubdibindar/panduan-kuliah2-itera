@@ -1,5 +1,6 @@
 # === Rahasia dan artefak sesi ber-login ===
-Code/cookie.txt
+Code/_archive/cookie-cf-clearance/cookie.txt
+Code/_archive/cookie-cf-clearance/navigator.userAgent.txt
 
 # === Dump aksesibilitas Playwright (sekali pakai, dari sesi ber-login) ===
 /*.yml
