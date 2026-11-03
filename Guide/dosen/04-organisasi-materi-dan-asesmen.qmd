@@ -205,6 +205,48 @@ Formulir ketersediaan tugas menampilkan pengaturan jendela waktu pengumpulan, te
 
 Jika mahasiswa tidak dapat mengunggah berkas padahal waktu *Due date* belum lewat, periksa apakah kotak **Allow submissions from** memuat tanggal di masa mendatang atau opsi **Cut-off date** terkunci secara keliru. Jika mahasiswa mengirimkan jenis berkas yang tidak dapat dibuka (misalnya `.pages` atau `.rar`), periksa kembali pembatasan pada bidang **Accepted file types**. Dosen pengampu bertanggung jawab penuh atas kejelasan tenggat waktu dan kriteria penilaian tugas; asisten pengajar (**Non-editing teacher**) dapat memeriksa berkas tugas dan memberi masukan, tetapi tidak memiliki izin mengubah tenggat waktu atau bobot nilai tugas pada formulir pengaturan. Setelah tugas dibuat, periksa tampilannya pada bilah *Timeline* atau *Calendar* untuk memastikan jadwal pengumpulan telah tercatat dengan benar sebelum masa perkuliahan dimulai.
 
+### Mengatur tenggat berbeda per kelas paralel (Group overrides) {#sec-dosen-group-overrides}
+
+<!-- Sumber internal: Guide/handoff 20260907-handoff-group-overrides.md; Code/moodle_docs/Assignment_settings.md; Quiz_settings.md (Group and User overrides); temuan sandbox course 917: menu Overrides pada Assignment, tab Group overrides, formulir Add group override dengan dropdown Override group serta blok tanggal Allow submissions from / Due date / Cut-off date. -->
+
+Satu Assignment biasanya memakai satu jendela waktu pengumpulan yang berlaku bagi seluruh peserta. Namun ketika satu mata kuliah dibuka dalam beberapa kelas paralel dengan jadwal berbeda — misalnya `Kelas RA` berkuliah Selasa pagi, sedangkan `Kelas RB` berkuliah Kamis sore — tenggat `Tugas 1` keduanya semestinya juga berbeda. Fitur **Group overrides** menjawab kebutuhan itu: Anda tetap memakai satu Assignment, tetapi tiap kelas paralel mendapat jendela waktu pengumpulannya sendiri, tanpa perlu menduplikasi aktivitas.
+
+::: {.callout-important title="Perhatian"}
+#### Group overrides bukan Grouping dan bukan Restrict access {.unnumbered .unlisted}
+
+**Grouping** mengatur gabungan beberapa grup, **Restrict access** mengatur siapa yang boleh *melihat* aktivitas, sedangkan **Group overrides** mengatur *kapan* tiap grup boleh *mengumpulkan*. Ketiganya mudah tertukar. Kalau yang Anda inginkan hanya membedakan tenggat antar kelas, Group overrides adalah alatnya, bukan Restrict access.
+:::
+
+Pilih alat sesuai kebutuhan Anda:
+
+| Kebutuhan | Alat yang tepat |
+|---|---|
+| Satu Assignment, tenggat sama untuk semua kelas | Pengaturan *Availability* global — **Allow submissions from**, **Due date**, dan **Cut-off date** pada formulir Assignment |
+| Tenggat berbeda per kelas paralel dalam satu Assignment | **Group overrides** |
+| Tenggat berbeda untuk perorangan (dispensasi) | **Grant extension** (lihat @sec-dosen-perpanjangan-waktu) |
+| Aktivitas hanya terlihat oleh kelompok tertentu | **Restrict access** (lihat @sec-dosen-pembatasan-akses) |
+
+Sebelum memulai, Assignment sudah dibuat, dan grup kelas paralel — misalnya `Kelas RA` dan `Kelas RB` — sudah tersedia lewat menu **Participants → Groups**. Anda memerlukan peran **Teacher**. Buka Assignment yang dituju, pilih menu **More** pada navigasi Assignment, lalu pilih **Overrides**, dan pindah ke tab **Group overrides**, kemudian ikuti langkah berikut:
+
+1. Pilih tombol **Add group override**.
+2. Pada **Override group**, pilih grup kelas paralel yang akan diberi tenggat, misalnya `Kelas RA`.
+3. Atur **Allow submissions from** dengan tanggal dan jam kelas itu mulai boleh mengumpulkan, misalnya `8 September 2026, 07:30`.
+4. Atur **Due date** dengan batas pengumpulan resmi kelas itu, misalnya `15 September 2026, 07:30`.
+5. Bila kelas itu memerlukan batas akhir toleransi, centang **Enable** pada **Cut-off date** lalu isi tanggalnya.
+6. Pilih **Save**.
+
+Formulir **Add group override** menampilkan pemilih **Override group** beserta ketiga blok tanggal seperti pada @fig-dosen-override-02.
+
+![Formulir Add group override: pemilih Override group serta blok tanggal Allow submissions from, Due date, dan Cut-off date](assets/images/organisasi-dan-materi/07-form-add-group-override.png){#fig-dosen-override-02 fig-pos="H" width="85%"}
+
+Ulangi langkah yang sama untuk kelas paralel lain dengan tenggat yang berbeda. Halaman **Overrides** pada tab **Group overrides** kemudian mendaftar seluruh override beserta tenggatnya seperti pada @fig-dosen-override-01, dan tabelnya merinci tenggat tiap grup pada @fig-dosen-override-03.
+
+![Halaman Overrides pada Assignment dengan tab Group overrides dan tombol Add group override](assets/images/organisasi-dan-materi/06-halaman-overrides-group.png){#fig-dosen-override-01 fig-pos="H" width="85%"}
+
+![Tabel Overrides menampilkan beberapa baris grup dengan tenggat berbeda](assets/images/organisasi-dan-materi/08-tabel-group-override.png){#fig-dosen-override-03 fig-pos="H" width="85%"}
+
+Kolom **Open** pada tabel itu sama dengan **Allow submissions from**. Setelah menyimpan override, buka kembali halaman **Overrides** dan pastikan **Cut-off date** tersimpan sesuai yang Anda isi; bila nilainya meleset, pilih **Edit** pada baris yang bersangkutan, perbaiki tanggalnya, lalu **Save** lagi. Satu Assignment yang memakai beberapa Group overrides tetap menghasilkan satu item nilai di buku nilai — yang membedakan antar kelas adalah tenggatnya, bukan item nilainya. Pengubahan tenggat maupun override hanya dapat dilakukan oleh peran **Teacher**; **Non-editing teacher** tidak dapat mengubahnya. Setelah seluruh override tersimpan, periksa halaman Assignment dari sisi mahasiswa untuk memastikan tiap kelas melihat tenggatnya sendiri, lalu lanjutkan ke @sec-dosen-pemantauan-laporan untuk memantau pengumpulan per kelas.
+
 ### Membuat Quiz dan mengisi bank soal {#sec-dosen-quiz}
 
 <!-- Sumber internal: Guide/spec.md D-08; Code/moodle_docs/Quiz.md, Quiz_settings.md, Building_Quiz.md; temuan sandbox course 917 (Kuis 1: Konsep Dasar Perencanaan Wilayah, cmid 6768): formulir Quiz memuat fieldset General, Timing, Grade, Layout, Question behaviour, Review options, Appearance, Safe Exam Browser, Extra restrictions on attempts, Overall feedback, Common module settings, Restrict access, Completion conditions, Tags, Competencies. -->

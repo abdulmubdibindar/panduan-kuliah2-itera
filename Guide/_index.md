@@ -21,5 +21,6 @@ Dokumen indeks yang menjelaskan isi direktori `Guide`, tempat menyusun dokumen p
 - [[07 APAPUN DICOBA/Moodle Docs (manual)/Guide/KULIAH2|KULIAH2]]: catatan penelaahan hasil eksplorasi langsung pada situs Moodle ITERA yang menjadi penghubung antara kebutuhan lokal dan dokumentasi generik Moodle
 - [[07 APAPUN DICOBA/Moodle Docs (manual)/Guide/RINGKASAN|RINGKASAN]]: arsip ringkasan dan daftar pekerjaan per 9 Juli 2026; bukan sumber status aktif
 - [[07 APAPUN DICOBA/Moodle Docs (manual)/Guide/20260828-panduan-verifikasi|20260828-panduan-verifikasi]]: langkah render ulang dan pemeriksaan urutan halaman depan serta entri Bagian di Daftar Isi
+- [[07 APAPUN DICOBA/Moodle Docs (manual)/Guide/20260907-handoff-group-overrides|20260907-handoff-group-overrides]]: handoff fitur Group overrides pada Assignment — fakta terverifikasi, jalur menu, struktur form, quirk cutoff, sumber korpus, dan rekomendasi penempatan di pedoman (untuk menulis sub-bagian D-07/D-09 nanti)
 - `periksa-urutan-pdf.py`: pemeriksa baca-saja atas PDF terbangun — urutan halaman depan, nomor halaman tercetak, dan bookmark Bagian
 - [[07 APAPUN DICOBA/Moodle Docs (manual)/Guide/_index|_index]]: katalog struktur direktori `Guide`
