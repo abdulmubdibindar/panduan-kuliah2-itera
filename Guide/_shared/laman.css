@@ -1,6 +1,93 @@
 /* Gaya laman HTML (direktori docs/). Tidak berpengaruh pada keluaran PDF
    Typst, karena berkas ini hanya dipasang pada format html di _quarto.yml. */
 
+/* Fonta brand.yml hanya menyebut nama keluarga, sehingga peramban yang tidak
+   memasang fonta itu akan memakai pengganti. Deklarasi di bawah memuat berkas
+   yang dibundel di Guide/_shared/fonts/, yang disalin ke docs/_shared/fonts/
+   lewat `project.resources` di _quarto.yml. URL-nya relatif terhadap berkas
+   CSS ini, jadi tetap benar di halaman sedalam apa pun (Quarto menulis tautan
+   CSS-nya sebagai ../_shared/laman.css pada halaman dalam subdirektori). */
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Italic.otf");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-BoldItalic.otf");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Carlito";
+  src: url("fonts/Carlito-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Carlito";
+  src: url("fonts/Carlito-Italic.ttf");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Carlito";
+  src: url("fonts/Carlito-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Carlito";
+  src: url("fonts/Carlito-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("fonts/JetBrainsMono-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("fonts/JetBrainsMono-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* Lembar pengesahan adalah halaman cetak. Di laman, judulnya digantikan blok
    arahan pada index.qmd; hanya judulnya yang disembunyikan, karena blok arahan
    itu sendiri berada di dalam seksi yang sama. */

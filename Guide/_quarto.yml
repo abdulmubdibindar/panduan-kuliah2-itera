@@ -2,6 +2,11 @@ project:
   type: book
   output-dir: _book
   brand: assets/brand.yml
+  # Berkas fonta hanya dirujuk dari _shared/laman.css lewat url(); Quarto tidak
+  # memindai CSS, jadi direktori ini harus didaftarkan agar ikut tersalin ke
+  # docs/_shared/fonts/ saat laman dirender.
+  resources:
+    - _shared/fonts
 
 book:
   title: "Panduan Penggunaan Platform *New E-Learning* ITERA"
