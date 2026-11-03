@@ -38,6 +38,7 @@ Dampak/rujukan: berkas, keluaran, atau isu terkait.
 | `guide`, `guide/dosen`, `guide/mahasiswa` | Naskah pedoman |
 | `code`, `ekstraktor` | Perkakas dan korpus di `Code/` |
 | `git` | Kebijakan penerbitan, `.gitignore`, konvensi |
+| `sinkron` | Cerminan vault ke repo lewat `sync-ke-github.ps1` |
 | `arsip`, `akar` | `_archive/`, `_assets/`, dan berkas akar |
 
 ## Delapan aturan commit
