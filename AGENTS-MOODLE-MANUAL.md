@@ -36,7 +36,7 @@ Kedua wilayah tidak diberi nomor karena ekstraksi tidak harus diulang setiap kal
 
 ## Masukan Bersama
 
-- Referensi lokal Moodle: `Code/moodle_docs/`
+- Referensi lokal Moodle: `Code/moodle_docs/` — hanya ada di mesin penyusun, tidak diterbitkan ke GitHub
 - Temuan situs Moodle ITERA: [Guide/KULIAH2.md](Guide/KULIAH2.md)
 - Kebutuhan keluaran: [Guide/spec.md](Guide/spec.md)
 - Konteks akademik: `_assets/`
@@ -57,12 +57,13 @@ Pengguna memeriksa struktur, ketepatan langkah, dan kecocokan tangkapan layar pa
 
 ## Aturan yang Berlaku
 
-- Ikuti [[TONE]] untuk komunikasi dan [[DESIGN]] untuk identitas visual.
-- Setiap dokumen baru mengikuti ketentuan format dari [[AGENTS]] akar ITERA.
+- Ikuti [[TONE]] untuk komunikasi dan [[DESIGN]] untuk identitas visual (Playfair Display untuk judul, Carlito untuk teks isi, JetBrains Mono untuk teks teknis/kode).
+- Setiap dokumen baru mengikuti ketentuan format dari [[AGENTS-ITERA-UMUM|AGENTS]] akar ITERA dan bakuan `penulisan-quarto` (termasuk satu baris kosong antara heading dan paragraf, serta satu baris kosong sebelum dan sesudah daftar bernomor/tidak bernomor).
 - Jangan memuat seluruh korpus `Code/moodle_docs`; buka indeksnya, lalu baca hanya laman yang relevan dengan bagian yang sedang ditulis.
 - Jangan melanjutkan ke tahap berikutnya sebelum pengguna memeriksa keluaran tahap aktif.
 - `_index.md` adalah katalog struktur, bukan tempat menyimpan uraian kerja.
 - **Jangan membuat atau memperbarui berkas `_log.md`.** Riwayat perubahan proyek ini dipegang riwayat commit git; gunakan `git log` untuk menelusurinya.
+- Setiap commit mengikuti [CONTRIBUTING.md](CONTRIBUTING.md): satu commit satu maksud, subjek imperatif, dan badan pesan menjelaskan mengapa. Kerangka pesannya tersedia di `.gitmessage`.
 
 ## Debugging Kolaboratif
 

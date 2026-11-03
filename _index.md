@@ -19,24 +19,27 @@ Katalog ringkas proyek pengolahan dokumentasi Moodle menjadi pedoman penggunaan 
 Blok di bawah dibangkitkan `sync-index.ps1`; isinya hasil pemindaian folder, bukan tulisan tangan. Gunanya **menguji daftar di atas** — apa yang muncul di sini tetapi tidak disebut di atas berarti katalognya tertinggal. Jangan sunting di dalam pagar; jangan pula membalas selisihnya dengan menghapus baris tulis tangan.
 
 <!-- indeks:mulai -->
-*Dipindai 2026-08-28 19:47 oleh `sync-index.ps1`. Jangan sunting di dalam pagar ini.*
+*Dipindai 2026-10-16 21:22 oleh `sync-index.ps1`. Jangan sunting di dalam pagar ini.*
 
 **Subdirektori**
 
 | Nama | Berkas | Kontrak |
 | --- | ---: | --- |
+| `.gemini` | 0 | - |
 | `.playwright-cli` | 115 | - |
-| `_assets` | 12 | - |
-| `Code` | 347 | CONTEXT.md |
-| `Guide` | 360 | CONTEXT.md |
+| `_assets` | 11 | - |
+| `Code` | 430 | CONTEXT.md |
+| `Guide` | 368 | CONTEXT.md |
 
 **Berkas Markdown**
 
 - `_index.md` : Panduan Penggunaan Moodle ITERA
-- `_log.md` : Log Perubahan - Direktori Root
+- `AGENTS.md`
 - `AGENTS-MOODLE-MANUAL.md` : AGENTS-MOODLE-MANUAL
 - `CLAUDE.md`
-- `CONTEXT.md` : Konteks Proyek Pedoman Moodle ITERA
+- `GEMINI.md`
+- `README.md`
+- `sync-ke-github.md` : Panduan sync-ke-github.ps1
 
-**Berkas lain**: 10 x .yml
+**Berkas lain**: 10 x .yml, 1 x .ps1, 1 x .gitattributes, 1 x .gitignore
 <!-- indeks:selesai -->
