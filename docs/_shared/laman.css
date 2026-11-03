@@ -1,0 +1,32 @@
+/* Gaya laman HTML (direktori docs/). Tidak berpengaruh pada keluaran PDF
+   Typst, karena berkas ini hanya dipasang pada format html di _quarto.yml. */
+
+/* Lembar pengesahan adalah halaman cetak. Di laman, judulnya digantikan blok
+   arahan pada index.qmd; hanya judulnya yang disembunyikan, karena blok arahan
+   itu sendiri berada di dalam seksi yang sama. */
+#lembar-pengesahan > h1 {
+  display: none;
+}
+
+.laman-logo {
+  display: block;
+  width: 6rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.laman-pembuka {
+  border-left: 4px solid #003b59;
+  background-color: #e8f0f3;
+  border-radius: 0.25rem;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.laman-pembuka p:last-child {
+  margin-bottom: 0;
+}
+
+.laman-tombol {
+  margin: 0 0.5rem 0.75rem 0;
+}

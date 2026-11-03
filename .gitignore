@@ -17,6 +17,7 @@ Code/kuliah2-explore/dumps/
 
 # === Keluaran render dan singgahan Quarto ===
 .quarto/
+Guide/_book-laman/
 Guide/dosen/_book/
 Guide/mahasiswa/_book/
 Guide/index.typ

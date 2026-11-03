@@ -67,3 +67,38 @@
 ]
 ```
 {{< pagebreak >}}
+
+::: {.content-visible when-format="html"}
+
+![](assets/images/logo-itera.png){.laman-logo}
+
+::: {.laman-pembuka}
+Pedoman ini menuntun dosen, asisten, dan mahasiswa menggunakan platform
+*New E-Learning* ITERA (`kuliah2.itera.ac.id`). Setiap prosedur disusun dengan
+prasyarat, jalur menu, langkah bernomor, hasil yang terlihat, dan tindakan
+lanjutan ketika hasilnya berbeda.
+:::
+
+[Mulai membaca](prakata.qmd){.btn .btn-primary .laman-tombol}
+[Unduh versi PDF](Panduan-Moodle-ITERA.pdf){.btn .btn-outline-secondary .laman-tombol}
+
+## Penyusun {.unnumbered}
+
+- Dr. Ir. Harry Yuliansyah, S.T., M.Eng
+- Muhammad Abdul Mubdi Bindar, S.T., M.T.
+- Misfallah Nurhayati, M.T.
+- Dr. Husna Tiara Putri, S.T., M.T.
+- Vivian Alvianti, S.P.W.K., M.P.W.K.
+
+## Susunan Bagian {.unnumbered}
+
+| Bagian | Untuk | Mulai dari |
+| --- | --- | --- |
+| I | Dosen | [Masuk dan orientasi](dosen/01-login-orientasi.qmd) |
+| II | Asisten | [Kewenangan dan alur kerja](asisten/01-kewenangan-dan-alur-kerja.qmd) |
+| III | Mahasiswa | [Masuk dan mengenali antarmuka](mahasiswa/login-dan-orientasi.qmd) |
+
+Laman ini memuat versi HTML dari pedoman. Versi PDF pada tautan di atas adalah
+terbitan resmi yang dipakai untuk pencetakan dan pengesahan.
+
+:::

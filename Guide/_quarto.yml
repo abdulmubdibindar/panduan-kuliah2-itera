@@ -9,7 +9,8 @@ book:
   date: "2026-08-27"
   output-file: "Panduan-Moodle-ITERA"
   chapters:
-    - index.qmd
+    - href: index.qmd
+      text: "Halaman Depan"
     - prakata.qmd
     - tentang-panduan.qmd
     - part: "Bagian I — Panduan untuk Dosen"
@@ -48,6 +49,12 @@ language:
   section-title-footnotes: "Catatan Kaki"
 
 format:
+  html:
+    site-url: "https://abdulmubdibindar.github.io/panduan-kuliah2-itera/"
+    toc: true
+    toc-depth: 3
+    number-sections: true
+    css: _shared/laman.css
   typst:
     papersize: a4
     page-numbering: "1"
