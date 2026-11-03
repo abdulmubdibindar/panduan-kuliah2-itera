@@ -7,6 +7,14 @@ Code/_archive/cookie-cf-clearance/navigator.userAgent.txt
 .playwright-cli/
 Code/.playwright-cli/
 
+# === Korpus rujukan lokal (hasil ekstraksi docs.moodle.org) ===
+# Besar dan turunan dokumentasi pihak ketiga; bangun ulang dengan Code/method_claude.py
+Code/moodle_docs/
+
+# === Arsip eksplorasi situs (dump sesi ber-login) ===
+# Turunan Kuliah2; pada halaman tertentu memuat data pribadi mahasiswa
+Code/kuliah2-explore/dumps/
+
 # === Keluaran render dan singgahan Quarto ===
 .quarto/
 Guide/dosen/_book/
@@ -24,9 +32,12 @@ Guide/eksperimen-obe-cpmk/
 # === Berkas kerja sementara ===
 Guide/*todo*.md
 Guide/20260828-panduan-verifikasi.md
-Guide/HANDOFF-SISA-TUGAS.md
 Guide/test_out.pdf
 /HANDOFF-PENERBITAN-GIT.md
+
+# === Dokumen handoff / serah-terima (internal, tidak diterbitkan) ===
+Guide/*handoff*.md
+Guide/HANDOFF-*.md
 
 # === Perkakas lokal, disalin ke repo tetapi tidak diterbitkan ===
 sync-ke-github.*
