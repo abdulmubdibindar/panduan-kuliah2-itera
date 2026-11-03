@@ -72,7 +72,7 @@ Setiap commit mencatat satu maksud. Format pesan, tipe, lingkup, dan delapan atu
 
 ### Sumber dan Atribusi
 
-Korpus dokumentasi generik di `Code/moodle_docs/` diekstrak dari [docs.moodle.org](https://docs.moodle.org), didistribusikan Moodle Pty Ltd di bawah lisensi [GNU GPL](https://docs.moodle.org/en/License). Korpus itu hanya tersimpan di mesin penyusun dan tidak ikut diterbitkan; yang diterbitkan adalah pengekstraknya, `Code/method_claude.py`.
+Korpus dokumentasi generik di `Code/moodle_docs/` diekstrak dari [docs.moodle.org](https://docs.moodle.org), didistribusikan Moodle Pty Ltd di bawah lisensi [GNU GPL](https://docs.moodle.org/en/License). Korpus itu hanya tersimpan di mesin penyusun dan tidak ikut diterbitkan; yang diterbitkan adalah pengekstraknya, `Code/method_claude.py`. Asal-usul korpus itu — dibangun sebelum alur *browsing agent* tersedia — dijelaskan di [Code/CONTEXT.md](Code/CONTEXT.md).
 
 ---
 
@@ -144,4 +144,4 @@ Each commit records a single intent. The message format, types, scopes, and the 
 
 ### Sources and Attribution
 
-The generic documentation corpus under `Code/moodle_docs/` was extracted from [docs.moodle.org](https://docs.moodle.org), distributed by Moodle Pty Ltd under the [GNU GPL](https://docs.moodle.org/en/License). The corpus stays on the authors' machines and is not published; what is published is the extractor, `Code/method_claude.py`.
+The generic documentation corpus under `Code/moodle_docs/` was extracted from [docs.moodle.org](https://docs.moodle.org), distributed by Moodle Pty Ltd under the [GNU GPL](https://docs.moodle.org/en/License). The corpus stays on the authors' machines and is not published; what is published is the extractor, `Code/method_claude.py`. Why that corpus exists — it predates agentic browser automation — is explained in [Code/CONTEXT.md](Code/CONTEXT.md).

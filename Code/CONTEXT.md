@@ -14,6 +14,12 @@ tags:
 
 Satu pekerjaan: memperoleh atau memperbaiki sumber lokal yang diperlukan oleh penulis pedoman. Jangan mengekstraksi ulang korpus jika laman yang dibutuhkan sudah tersedia dan masih memadai.
 
+## Asal korpus `moodle_docs`
+
+Direktori ini lahir dari keterbatasan pengetahuan saat penyusunannya. Ketika korpus mulai dikumpulkan (Juli 2026), penyusun belum tahu bahwa ada cara kerja bernama *browsing agent*: otomasi browser yang bekerja bersama manusia, memakai sesi Chrome sungguhan, sehingga tantangan Cloudflare cukup diselesaikan sekali secara manual lalu laman diekstrak langsung. Yang terbayang saat itu hanyalah API resmi plus nilai cookie `cf_clearance` yang harus diperbarui berkala, dan itulah jalur yang dipakai (arsipnya di [[07 APAPUN DICOBA/Moodle Docs (manual)/Code/_archive/cookie-cf-clearance/_index|arsip alur lama]]).
+
+Sejak September 2026 alur itu ditinggalkan: `method_claude.py` meminjam sesi Chrome lewat CDP, penyusun menyelesaikan captcha sekali, lalu laman diekstrak langsung. Korpus di direktori ini karena itu bukan lagi jalur utama — ia dipertahankan sebagai rujukan yang sudah terperiksa dan sebagai jejak bagaimana pedoman ini disusun, serta tidak diterbitkan ke GitHub (lihat `.gitignore`).
+
 ## Masukan
 
 - Kerja: daftar laman pada `@for_teacher.txt`, `@assignments.txt`, atau `@quiz_seb.txt`, sesuai tugas aktif.

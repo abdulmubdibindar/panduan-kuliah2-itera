@@ -5,7 +5,7 @@ Dokumen indeks yang menjelaskan isi dari direktori `Code` yang digunakan untuk m
 ## Direktori
 
 - `contoh-learn`: Contoh kode latihan pemrograman (menghitung rata-rata list) yang dipisahkan dari [[LEARN.md]], berisi `rata-rata.py` dan dokumentasinya `rata-rata.md`
-- `moodle_docs`: Hasil ekstraksi Markdown dari [[method_claude.py]] — kumpulan laman docs.moodle.org (pengaturan kursus, enrolment, grading, aktivitas kuis/forum/wiki/dll., serta pengaturan ujian dengan Safe Exam Browser) beserta subdirektori `images` untuk berkas tangkapan layar pendukung, dijelaskan dalam [[Code/moodle_docs/_index]]
+- `moodle_docs`: Hasil ekstraksi Markdown dari [[method_claude.py]] — kumpulan laman docs.moodle.org (pengaturan kursus, enrolment, grading, aktivitas kuis/forum/wiki/dll., serta pengaturan ujian dengan Safe Exam Browser) beserta subdirektori `images` untuk berkas tangkapan layar pendukung, dijelaskan dalam [[Code/moodle_docs/_index]]; asal-usulnya dijelaskan di [[Code/CONTEXT|kontrak Code]]
 - `cdp-web-scrape`: Proyek/eksperimen terpisah (repositori git sendiri) untuk scraping berbasis Chrome DevTools Protocol (CDP) + Google Sheets pada portal SIAKAD ITERA; independen dari alur kerja ekstraksi Moodle Docs dan mengikuti konvensi dokumentasinya sendiri (`README.md`, `CLAUDE.md`)
 - `cdp-kuliah2-explore`: Hasil penggandaan `cdp-web-scrape`, diadaptasi untuk menjelajahi `kuliah2.itera.ac.id` (instance Moodle ITERA) lewat sesi Chrome CDP yang sudah login SSO manual — bukan scraping tabel, melainkan dump satu halaman per panggilan ([[07 APAPUN DICOBA/Moodle Docs (manual)/Code/kuliah2-explore/explore_kuliah2.py|explore_kuliah2.py]]) sebagai bahan penelaahan untuk `Guide/KULIAH2.md`; mengikuti konvensi dokumentasinya sendiri (`README.md`, `CLAUDE.md`, `GEMINI.md`)
 
