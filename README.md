@@ -30,6 +30,7 @@ Pedoman penggunaan platform *New E-Learning* ITERA (`kuliah2.itera.ac.id`) untuk
 | Direktori | Isi |
 | --- | --- |
 | `Guide/` | Sumber Quarto (`.qmd`), konfigurasi (`_quarto.yml`), dan hasil render (`_book/`) |
+| `docs/` | Laman HTML hasil render yang disajikan GitHub Pages — dibangun ulang dengan `terbitkan-laman.ps1` |
 | `Guide/_shared/` | Fonta, templat Typst, dan aset bersama nonprosedural |
 | `Guide/eksperimen-obe-cpmk/` | Eksperimen integrasi OBE/CPMK — belum menjadi produk PDF, ditunda sampai pengujian Gradebook selesai |
 | `Guide/_archive/` | Naskah pedoman versi lama (legacy) yang sudah digantikan |
@@ -46,11 +47,21 @@ cd Guide
 quarto render
 ```
 
-Quarto mencetak proses render tiap bab satu per satu, diakhiri baris `Output created: _book/Panduan-Moodle-ITERA.pdf`. Berkas PDF-nya ada di `Guide/_book/Panduan-Moodle-ITERA.pdf`.
-
-Format keluaran proyek ini hanya `typst` (lihat `Guide/_quarto.yml`), jadi `quarto preview` tidak berlaku di sini — gunakan `quarto render` lalu buka PDF-nya secara manual.
+Quarto mencetak proses render tiap bab satu per satu, diakhiri baris `Output created:`. Proyek ini punya dua format (lihat `Guide/_quarto.yml`): PDF Typst di `Guide/_book/Panduan-Moodle-ITERA.pdf` dan laman HTML di `Guide/_book-laman/`. Untuk sekadar membaca, buka PDF-nya langsung; `quarto preview` hanya berguna bila sedang memeriksa laman HTML.
 
 Bila Quarto berhenti dengan galat fonta tidak ditemukan, periksa apakah pengaturan `font-paths` di `Guide/_quarto.yml` masih menunjuk ke `_shared/fonts` dan kesepuluh berkas fonta di dalamnya benar-benar ikut terkloning (`git ls-files "Guide/_shared/fonts/*"`).
+
+### Menerbitkan Laman
+
+Laman terbit di <https://abdulmubdibindar.github.io/panduan-kuliah2-itera/> dan disajikan GitHub Pages dari direktori `docs/` pada cabang `main`. Dari akar repo:
+
+```bash
+powershell -File .\terbitkan-laman.ps1
+```
+
+Skrip itu merender HTML ke `Guide/_book-laman/`, mencerminkannya ke `docs/` (dibangun ulang dari nol supaya bab yang sudah dihapus tidak tertinggal), menyalin PDF ke `docs/Panduan-Moodle-ITERA.pdf`, lalu menulis `docs/.nojekyll`. PDF tidak dirender ulang kecuali diminta dengan `-DenganPdf`, supaya terbitan resmi tidak berubah hanya karena versi Quarto berbeda. Setelah itu commit dan push `docs/`; GitHub Pages membangun ulang dalam satu-dua menit.
+
+`docs/` sengaja dikecualikan dari `robocopy /MIR` pada `sync-ke-github.ps1` (daftar `/XD`). Tanpa pengecualian itu, sinkronisasi vault OneDrive akan menghapus direktori tersebut karena `docs/` tidak pernah ada di vault.
 
 ### Dapat Dijalankan Agent Harness
 
@@ -102,6 +113,7 @@ A user guide for the *New E-Learning* ITERA platform (`kuliah2.itera.ac.id`), wr
 | Directory | Contents |
 | --- | --- |
 | `Guide/` | Quarto sources (`.qmd`), configuration (`_quarto.yml`), and render output (`_book/`) |
+| `docs/` | Rendered HTML site served by GitHub Pages — rebuilt with `terbitkan-laman.ps1` |
 | `Guide/_shared/` | Fonts, Typst templates, and shared non-procedural assets |
 | `Guide/eksperimen-obe-cpmk/` | OBE/CPMK integration experiment — not yet a PDF deliverable, on hold until Gradebook testing is complete |
 | `Guide/_archive/` | Superseded legacy drafts of the guide |
@@ -118,11 +130,21 @@ cd Guide
 quarto render
 ```
 
-Quarto prints the render progress for each chapter in turn, ending with `Output created: _book/Panduan-Moodle-ITERA.pdf`. The PDF lands at `Guide/_book/Panduan-Moodle-ITERA.pdf`.
-
-This project's only output format is `typst` (see `Guide/_quarto.yml`), so `quarto preview` does not apply here — use `quarto render` and open the PDF manually.
+Quarto prints the render progress for each chapter in turn, ending with `Output created:`. This project has two formats (see `Guide/_quarto.yml`): the Typst PDF at `Guide/_book/Panduan-Moodle-ITERA.pdf` and the HTML site at `Guide/_book-laman/`. To simply read the guide, open the PDF directly; `quarto preview` is only useful while checking the HTML site.
 
 If Quarto stops with a font-not-found error, check that `font-paths` in `Guide/_quarto.yml` still points to `_shared/fonts` and that all ten font files inside it were actually cloned (`git ls-files "Guide/_shared/fonts/*"`).
+
+### Publishing the Site
+
+The site lives at <https://abdulmubdibindar.github.io/panduan-kuliah2-itera/> and is served by GitHub Pages from the `docs/` directory on `main`. From the repo root:
+
+```bash
+powershell -File .\terbitkan-laman.ps1
+```
+
+The script renders HTML into `Guide/_book-laman/`, mirrors it to `docs/` (rebuilt from scratch so deleted chapters do not linger), copies the PDF to `docs/Panduan-Moodle-ITERA.pdf`, and writes `docs/.nojekyll`. The PDF is not re-rendered unless you pass `-DenganPdf`, so the official deliverable does not change merely because the Quarto version differs. Then commit and push `docs/`; GitHub Pages rebuilds within a minute or two.
+
+`docs/` is deliberately excluded from `robocopy /MIR` in `sync-ke-github.ps1` (the `/XD` list). Without that exclusion, syncing the OneDrive vault would delete the directory, since `docs/` never exists in the vault.
 
 ### Runs Under an Agent Harness
 

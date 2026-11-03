@@ -7,12 +7,14 @@ Katalog ringkas proyek pengolahan dokumentasi Moodle menjadi pedoman penggunaan 
 - `Code`: pengadaan dan perawatan sumber lokal Moodle, dijelaskan dalam [[07 APAPUN DICOBA/Moodle Docs (manual)/Code/CONTEXT|Code/CONTEXT]] dan [[07 APAPUN DICOBA/Moodle Docs (manual)/Code/_index|Code/_index]]
 - `Guide`: penelaahan sumber, penulisan Quarto, tangkapan layar, dan hasil pedoman, dijelaskan dalam [[07 APAPUN DICOBA/Moodle Docs (manual)/Guide/CONTEXT|Guide/CONTEXT]] dan [[07 APAPUN DICOBA/Moodle Docs (manual)/Guide/_index|Guide/_index]]
 - `_assets`: rujukan akademik lokal yang stabil, dijelaskan dalam [[07 APAPUN DICOBA/Moodle Docs (manual)/_assets/_index|_assets/_index]]
+- `docs`: laman HTML hasil render yang disajikan GitHub Pages, dibangun ulang dengan `terbitkan-laman.ps1` (tidak pernah ada di vault, jadi dikecualikan dari sinkronisasi)
 
 ## File
 
 - [[07 APAPUN DICOBA/Moodle Docs (manual)/AGENTS-MOODLE-MANUAL]]: berkas entri yang mengarahkan tugas ke kontrak dan bakuan yang sesuai, sekaligus kontrak workspace yang menjelaskan alur, masukan, keluaran, status, dan gerbang pemeriksaan manusia
 - [[07 APAPUN DICOBA/Moodle Docs (manual)/CLAUDE]]: Panduan cepat untuk membuka dan membaca berkas [[07 APAPUN DICOBA/Moodle Docs (manual)/AGENTS-MOODLE-MANUAL]]
 - [[07 APAPUN DICOBA/Moodle Docs (manual)/_index|_index]]: katalog struktur tingkat akar proyek
+- [[07 APAPUN DICOBA/Moodle Docs (manual)/terbitkan-laman]]: skrip render laman HTML ke `docs/`, salin PDF, dan tulis `.nojekyll` untuk GitHub Pages
 
 ## Isi Sebenarnya (dipindai)
 
