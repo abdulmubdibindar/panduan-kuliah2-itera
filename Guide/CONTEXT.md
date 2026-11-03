@@ -28,7 +28,7 @@ Jangan muat: seluruh korpus Moodle atau seluruh `_assets/`. Mulailah dari indeks
 ## Proses dan Gerbang
 
 1. Pilih satu pasangan topik sesuai urutan pada [[07 APAPUN DICOBA/Moodle Docs (manual)/Guide/matriks-pemenuhan#Gerbang Pasangan Topik\|gerbang pasangan topik]]. Jangan membuka pasangan berikutnya sebelum pengguna menyetujui pasangan aktif.
-2. Mulai dari indeks korpus. Jika sumber belum tersedia, ekstrak hanya laman yang relevan dari `docs.moodle.org` melalui MediaWiki API; jangan memakai domain internet lain.
+2. Mulai dari indeks korpus. Jika sumber belum tersedia, ekstrak hanya laman yang relevan dari `docs.moodle.org` melalui MediaWiki API lewat sesi Chrome CDP (lihat [[07 APAPUN DICOBA/Moodle Docs (manual)/Code/method_claude.md\|method_claude]]); jangan memakai domain internet lain.
 3. Cocokkan dokumentasi generik dengan temuan `KULIAH2` dan uji tiga peran di kursus sandbox. Semua perubahan situs dibatasi pada sandbox; kursus aktif hanya boleh dibaca.
 4. Tulis bagian dosen, asisten, dan mahasiswa secara konsisten. Setiap prosedur memuat prasyarat, jalur menu, langkah bernomor, hasil yang terlihat, cabang ketika hasil berbeda, batas kewenangan, dan tindakan berikutnya.
 5. Ambil tangkapan layar lokal pada ukuran konsisten, pangkas ke area tindakan, samarkan data pribadi, beri label stabil, dan rujuk secara eksplisit dari teks.

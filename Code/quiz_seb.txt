@@ -2,7 +2,7 @@
 # dengan Safe Exam Browser (SEB) beserta rumpun Quiz pendukungnya — bahan untuk
 # Bab 3 Asesmen, khususnya bagian "Mengatur Ujian dengan Safe Exam Browser".
 # Satu judul per baris; baris berawalan '#' dan baris kosong diabaikan.
-# Dipakai lewat: python method_claude.py --pages-file quiz_seb.txt --cookie-file cookie.txt
+# Dipakai lewat: python method_claude.py --pages-file quiz_seb.txt
 
 # Inti SEB
 Safe_Exam_Browser

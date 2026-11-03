@@ -5,6 +5,9 @@ title: Catatan Pembelajaran Berbasis Proyek Web Programming
 
 Catatan ini disusun berjenjang — dari nol pengetahuan _web programming_ sampai cukup untuk membaca dan memahami **seluruh** yang terjadi di [[method_claude.py]]. Tiap tingkat mengandalkan tingkat sebelumnya, jadi urutannya sengaja dibuat naik, bukan acak per topik.
 
+> [!NOTE] Pembaruan September 2026
+> Narasi di bawah menceritakan alur **lama** — meminjam cookie `cf_clearance` lewat `curl_cffi` (Tingkat 3–5). Sejak September 2026, [[method_claude.py]] tidak lagi memakai cookie itu: skrip menyambung ke Chrome asli lewat CDP (`connect_over_cdp`) dan mengirim semua permintaan lewat `context.request` milik browser, sehingga cookie hasil penyelesaian captcha dan sidik jari TLS **browser asli** terbawa otomatis — pengguna menyelesaikan captcha sekali, mesin mengerjakan sisanya. Konsep-konsep di sini tetap bahan belajar yang sah: cookie, status 403, `Session`, dan _TLS fingerprint_ tetap dipakai untuk menjelaskan **kenapa** alur CDP dipilih (alur lama ditolak justru karena sidik jarinya buatan, bukan karena cookie-nya salah). Keterangan alur baru ada di [[method_claude.md]].
+
 ## Peta Belajar
 
 | Tingkat | Isi | Pertanyaan yang terjawab |

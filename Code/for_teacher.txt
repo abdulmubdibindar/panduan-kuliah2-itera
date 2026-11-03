@@ -1,7 +1,7 @@
 # Daftar judul laman docs.moodle.org (namespace 502/en) terkait pengorganisasian
 # kelas oleh dosen (course setup, enrolment, grading, tracking, access restriction).
 # Satu judul per baris; baris berawalan '#' dan baris kosong diabaikan.
-# Dipakai lewat: python method_claude.py --pages-file for_teacher.txt --cookie-file cookie.txt
+# Dipakai lewat: python method_claude.py --pages-file for_teacher.txt
 
 Teacher_quick_guide
 Teacher_role

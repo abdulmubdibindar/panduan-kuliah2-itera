@@ -1,12 +1,17 @@
 # Daftar sempit kandidat sumber resmi docs.moodle.org/502/en yang belum tersedia
 # dalam korpus lokal dan dibutuhkan untuk pembangunan ulang pedoman Moodle ITERA.
 # Satu judul laman per baris; baris berawalan '#' dan baris kosong diabaikan.
-# Dipakai lewat: python method_claude.py --pages-file pedoman_rebuild_sources.txt --cookie-file cookie.txt
+# Dipakai lewat: python method_claude.py --pages-file pedoman_rebuild_sources.txt
 #
 # Audit 2026-08-20: Resources, Assignment_settings, Student_role,
 # Non-editing_teacher_role, Using_badges, dan Managing_badges dikonfirmasi dari
 # tautan silang dalam korpus lokal. Judul lain masih kandidat sampai MediaWiki API
 # dapat diakses kembali; ekstraktor akan mencatat API error tanpa membuat hasil palsu.
+#
+# Audit 2026-09-06 (ekstraksi lewat sesi Chrome CDP): 17 dari 19 judul berhasil
+# diekstrak. Dua judul DIPASTIKAN TIDAK ADA di docs.moodle.org/502/en (API membalas
+# "The page you specified doesn't exist"): Course_participation dan
+# Group_self-selection_activity. Group_choice_activity ADA dan berhasil diekstrak.
 
 # Resources dan tiap resource standar
 Resources
