@@ -33,7 +33,7 @@ Pedoman penggunaan platform *New E-Learning* ITERA (`kuliah2.itera.ac.id`) untuk
 | `Guide/_shared/` | Fonta, templat Typst, dan aset bersama nonprosedural |
 | `Guide/eksperimen-obe-cpmk/` | Eksperimen integrasi OBE/CPMK — belum menjadi produk PDF, ditunda sampai pengujian Gradebook selesai |
 | `Guide/_archive/` | Naskah pedoman versi lama (legacy) yang sudah digantikan |
-| `Code/` | Pengekstrak dokumentasi dan korpus lokal 72 laman `docs.moodle.org` |
+| `Code/` | Pengekstrak dokumentasi dan korpus lokal 72 laman `docs.moodle.org` — korpusnya tidak ikut diterbitkan ke repo |
 | `_assets/` | Rujukan akademik OBE/CPMK dan bahan pendukung lain yang dikutip lintas naskah |
 | `AGENTS-MOODLE-MANUAL.md`, `AGENTS.md`, `GEMINI.md`, `CLAUDE.md` | Berkas kontrak ICM — titik masuk agen AI yang bekerja di repo ini |
 
@@ -66,9 +66,13 @@ Makalah ini berlisensi **CC BY 4.0**, dan implementasi acuannya berlisensi MIT d
 
 Repo ini disinkronkan dari vault OneDrive (sumber kebenaran tunggal) memakai `sync-ke-github.ps1`, yang tersimpan di akar sumber tetapi **tidak diterbitkan** ke GitHub (lihat `.gitignore`). Skrip itu menjalankan `git pull --ff-only`, mencerminkan berkas dengan robocopy, lalu commit dan push. Panduan penggunaan lengkap dan alur pikir rancangannya ada di `sync-ke-github.md`, berkas pendamping yang juga tidak diterbitkan — keduanya hanya hidup di mesin-mesin penyusun lewat sinkronisasi OneDrive.
 
+### Konvensi Commit
+
+Setiap commit mencatat satu maksud. Format pesan, tipe, lingkup, dan delapan aturannya ada di [CONTRIBUTING.md](CONTRIBUTING.md); kerangka pesannya tersedia di `.gitmessage` dan dapat diaktifkan sekali per klon dengan `git config commit.template .gitmessage`. Riwayat commit menggantikan berkas `_log.md`, jadi pesan yang menjelaskan *mengapa* adalah bagian dari dokumentasi proyek.
+
 ### Sumber dan Atribusi
 
-Korpus dokumentasi generik di `Code/moodle_docs/` diekstrak dari [docs.moodle.org](https://docs.moodle.org), didistribusikan Moodle Pty Ltd di bawah lisensi [GNU GPL](https://docs.moodle.org/en/License).
+Korpus dokumentasi generik di `Code/moodle_docs/` diekstrak dari [docs.moodle.org](https://docs.moodle.org), didistribusikan Moodle Pty Ltd di bawah lisensi [GNU GPL](https://docs.moodle.org/en/License). Korpus itu hanya tersimpan di mesin penyusun dan tidak ikut diterbitkan; yang diterbitkan adalah pengekstraknya, `Code/method_claude.py`.
 
 ---
 
@@ -101,7 +105,7 @@ A user guide for the *New E-Learning* ITERA platform (`kuliah2.itera.ac.id`), wr
 | `Guide/_shared/` | Fonts, Typst templates, and shared non-procedural assets |
 | `Guide/eksperimen-obe-cpmk/` | OBE/CPMK integration experiment — not yet a PDF deliverable, on hold until Gradebook testing is complete |
 | `Guide/_archive/` | Superseded legacy drafts of the guide |
-| `Code/` | Documentation extractor and a local corpus of 72 `docs.moodle.org` pages |
+| `Code/` | Documentation extractor and a local corpus of 72 `docs.moodle.org` pages — the corpus itself is not published |
 | `_assets/` | Academic references for OBE/CPMK and other supporting material cited across the manuscript |
 | `AGENTS-MOODLE-MANUAL.md`, `AGENTS.md`, `GEMINI.md`, `CLAUDE.md` | ICM contract files — entry points for AI agents working in this repo |
 
@@ -134,6 +138,10 @@ The paper is licensed **CC BY 4.0**, and its reference implementation is MIT-lic
 
 This repo is synced from the OneDrive vault (the single source of truth) using `sync-ke-github.ps1`, which lives in the source root but is **not published** to GitHub (see `.gitignore`). The script runs `git pull --ff-only`, mirrors files with robocopy, then commits and pushes. The full usage guide and design rationale live in `sync-ke-github.md`, a companion file that is likewise not published — both files exist only on the authors' machines via their own OneDrive sync.
 
+### Commit Convention
+
+Each commit records a single intent. The message format, types, scopes, and the eight rules live in [CONTRIBUTING.md](CONTRIBUTING.md); a message skeleton is provided in `.gitmessage` and can be enabled once per clone with `git config commit.template .gitmessage`. Commit history replaces a `_log.md` file, so messages that explain *why* are part of the project documentation.
+
 ### Sources and Attribution
 
-The generic documentation corpus under `Code/moodle_docs/` was extracted from [docs.moodle.org](https://docs.moodle.org), distributed by Moodle Pty Ltd under the [GNU GPL](https://docs.moodle.org/en/License).
+The generic documentation corpus under `Code/moodle_docs/` was extracted from [docs.moodle.org](https://docs.moodle.org), distributed by Moodle Pty Ltd under the [GNU GPL](https://docs.moodle.org/en/License). The corpus stays on the authors' machines and is not published; what is published is the extractor, `Code/method_claude.py`.

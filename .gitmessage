@@ -1,0 +1,15 @@
+# <tipe>(<lingkup>): <ringkasan imperatif, maks 72 kolom>
+# |<----  usahakan subjek sampai 50 kolom  ---->|
+#
+# Mengapa perubahan ini ada? Jelaskan alasan dan konteks yang tidak
+# terbaca dari diff. Bungkus badan pesan pada 72 kolom.
+#
+# Dampak/rujukan: berkas, keluaran, atau isu terkait.
+#
+# ---------------------------------------------------------------------
+# tipe    : feat fix docs style refactor perf test build ci chore revert
+# lingkup : guide | guide/dosen | guide/mahasiswa | code | ekstraktor
+#           | git | arsip | akar
+# aturan  : lihat CONTRIBUTING.md bagian "Delapan aturan commit"
+# aktifkan sekali per klon: git config commit.template .gitmessage
+# Baris berawalan # akan diabaikan git.
