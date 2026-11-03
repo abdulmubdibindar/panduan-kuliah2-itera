@@ -19,7 +19,7 @@ Katalog ringkas proyek pengolahan dokumentasi Moodle menjadi pedoman penggunaan 
 Blok di bawah dibangkitkan `sync-index.ps1`; isinya hasil pemindaian folder, bukan tulisan tangan. Gunanya **menguji daftar di atas** — apa yang muncul di sini tetapi tidak disebut di atas berarti katalognya tertinggal. Jangan sunting di dalam pagar; jangan pula membalas selisihnya dengan menghapus baris tulis tangan.
 
 <!-- indeks:mulai -->
-*Dipindai 2026-10-16 21:22 oleh `sync-index.ps1`. Jangan sunting di dalam pagar ini.*
+*Dipindai 2026-11-04 04:01 oleh `sync-index.ps1`. Jangan sunting di dalam pagar ini.*
 
 **Subdirektori**
 
@@ -37,9 +37,10 @@ Blok di bawah dibangkitkan `sync-index.ps1`; isinya hasil pemindaian folder, buk
 - `AGENTS.md`
 - `AGENTS-MOODLE-MANUAL.md` : AGENTS-MOODLE-MANUAL
 - `CLAUDE.md`
+- `CONTRIBUTING.md` : Kontribusi dan Konvensi Commit
 - `GEMINI.md`
 - `README.md`
 - `sync-ke-github.md` : Panduan sync-ke-github.ps1
 
-**Berkas lain**: 10 x .yml, 1 x .ps1, 1 x .gitattributes, 1 x .gitignore
+**Berkas lain**: 10 x .yml, 1 x .ps1, 1 x .gitmessage, 1 x .gitattributes, 1 x .gitignore
 <!-- indeks:selesai -->
