@@ -45,7 +45,8 @@ $ErrorActionPreference = "Stop"
 
 $Akar  = $PSScriptRoot
 $Guide = Join-Path $Akar "Guide"
-$Situs = Join-Path $Guide "_book-laman"
+$Nama  = "_book-laman"
+$Situs = Join-Path $Guide $Nama
 $Docs  = Join-Path $Akar "docs"
 $Pdf   = Join-Path $Guide "_book\Panduan-Moodle-ITERA.pdf"
 
@@ -68,7 +69,11 @@ try {
     }
 
     Write-Host "`n== Merender laman HTML ==" -ForegroundColor Yellow
-    quarto render --to html --output-dir $Situs
+    # Jalur output-dir harus relatif. Bila diberi jalur absolut, Quarto menulis
+    # laman dua kali: ke direktori itu dan ke project.output-dir (_book), lalu
+    # menyisipkan salinan bersarang _book/_book-laman yang ikut tercermin ke
+    # docs/ dan terbit sebagai berkas sampah.
+    quarto render --to html --output-dir $Nama
     if ($LASTEXITCODE -ne 0) {
         Write-Host "Render HTML gagal (kode $LASTEXITCODE). docs/ tidak diubah." -ForegroundColor Red
         exit 1
