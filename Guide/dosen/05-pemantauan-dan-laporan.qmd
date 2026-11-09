@@ -1,10 +1,10 @@
-# Memantau Pengumpulan Tugas dan Jejak Aktivitas Mahasiswa {#sec-dosen-pemantauan-laporan}
+# Memantau Pengumpulan Tugas, Pengerjaan Kuis, dan Jejak Aktivitas Mahasiswa {#sec-dosen-pemantauan-laporan}
 
-<!-- Sumber internal: Guide/spec.md D-09; Guide/KULIAH2.md §Asesmen, §Jejak Digital; Code/moodle_docs/Assignment.md; Assignment_settings.md; Activity_completion.md; Reports.md; temuan sandbox course 917: Grading summary (Participants, Submitted, Needs grading), tabel Submissions (action=grading), dan filter Reports -> Logs. -->
+<!-- Sumber internal: Guide/spec.md D-09, D-10; Guide/KULIAH2.md §Asesmen, §Jejak Digital; Code/moodle_docs/Assignment.md; Assignment_settings.md; Activity_completion.md; Quiz_activity.md; Quiz_reports.md; Reports.md; temuan sandbox course 917: Grading summary (Participants, Submitted, Needs grading), tabel Submissions (action=grading), laporan Results -> Grades dan Manual grading pada Quiz, serta filter Reports -> Logs. -->
 
-Setelah instrumen penugasan dan materi pembelajaran diterbitkan, dosen pengampu dan asisten pengajar perlu memantau progres penyerahan berkas tugas, memeriksa kepatuhan batas waktu (*Due date*), serta menelusuri keaktifan mahasiswa dalam mengakses bahan ajar.
+Setelah instrumen penugasan dan materi pembelajaran diterbitkan, dosen pengampu dan asisten pengajar perlu memantau progres penyerahan berkas tugas, memeriksa kepatuhan batas waktu (*Due date*), meninjau percobaan kuis, serta menelusuri keaktifan mahasiswa dalam mengakses bahan ajar.
 
-Platform New E-Learning ITERA menyediakan ringkasan terpusat (*Grading summary*), tabel pemantauan pengumpulan (*Submissions table*), mekanisme perpanjangan batas waktu (*Grant extension*), serta laporan jejak digital (*Reports & Logs*).
+Platform New E-Learning ITERA menyediakan ringkasan terpusat (*Grading summary*), tabel pemantauan pengumpulan (*Submissions table*), mekanisme perpanjangan batas waktu (*Grant extension*), laporan hasil kuis (*Results*), serta laporan jejak digital (*Reports & Logs*).
 
 ## Memeriksa status dan kelengkapan pengumpulan tugas {#sec-dosen-pantau-tugas}
 
@@ -62,7 +62,55 @@ Fitur **Grant extension** memungkinkan Anda memberikan perpanjangan batas waktu 
 
 Pada baris mahasiswa tersebut, kolom status akan menampilkan penanda `Extension granted until [Tanggal & Jam]`. Mahasiswa itu dapat mengunggah berkas hingga batas perpanjangan tercapai tanpa ditandai terlambat.
 
-Jika menu **Grant extension** tidak muncul pada baris mahasiswa, pastikan akun Anda berperan **Teacher**, bukan **Non-editing teacher**. Jika opsi tanggal tidak dapat diubah, pastikan kotak centang **Enable** di samping tanggal perpanjangan sudah diaktifkan. Setelah dispensasi diberikan, lanjutkan dengan menelusuri laporan jejak digital untuk memantau kapan mahasiswa mengakses bahan ajar dan panduan.
+Jika menu **Grant extension** tidak muncul pada baris mahasiswa, pastikan akun Anda berperan **Teacher**, bukan **Non-editing teacher**. Jika opsi tanggal tidak dapat diubah, pastikan kotak centang **Enable** di samping tanggal perpanjangan sudah diaktifkan. Setelah dispensasi diberikan, lanjutkan dengan memantau percobaan kuis agar nilai esai dan status pengerjaan tidak tertinggal.
+
+## Memantau percobaan dan hasil kuis {#sec-dosen-pantau-kuis}
+
+<!-- Sumber internal: Guide/spec.md D-09; Code/moodle_docs/Quiz_reports.md; Quiz_activity.md; temuan sandbox course 917 (setelah percobaan uji pada cmid 6768): report.php?mode=overview menampilkan Attempts, filter Attempts from dan Attempts that are, kolom Status, Started, Completed, Duration, Grade, Q.x, penanda Requires grading, tautan Review attempt, serta tombol Delete selected attempts. -->
+
+Berbeda dengan Assignment yang meninggalkan berkas, Quiz merekam jejak pengerjaan sebagai percobaan (*attempt*) yang tercatat otomatis. Melalui laporan hasil kuis, Anda dapat melihat berapa mahasiswa yang sudah mengerjakan, siapa yang belum mulai, berapa lama pengerjaannya, serta nilai setiap soal. Quiz harus sudah dibuat dan dijadwalkan lebih dahulu (@sec-dosen-quiz). Peran **Dosen (Teacher)** maupun **Asisten Pengajar (Non-editing teacher)** sama-sama dapat membuka laporan ini. Buka halaman kuis, lalu ikuti langkah berikut:
+
+1. Pilih menu **Results**, lalu buka tab **Grades**.
+2. Perhatikan ringkasan **Attempts: [jumlah]** di atas formulir penyaring. Angka ini menunjukkan jumlah percobaan yang tercatat, sedangkan keterangan dalam tanda kurung menunjukkan porsi percobaan dari kelompok yang sedang dipilih.
+3. Atur formulir penyaring sesuai kebutuhan:
+   - **Attempts from**: Pilih `enrolled users who have a quiz attempt` untuk melihat peserta yang sudah mengerjakan, atau `enrolled users who do not have a quiz attempt` untuk menemukan mahasiswa yang belum mencoba sama sekali.
+   - **Attempts that are**: Saring berdasarkan status percobaan, yaitu `Not started`, `In progress`, `Overdue`, `Submitted`, `Finished`, atau `Never submitted`.
+   - **Show at most one finished attempt per user**: Tampilkan hanya satu percobaan terbaik bila kuis mengizinkan percobaan berulang, sesuai **Grading method** kuis (misalnya `Highest grade`).
+   - **Separate groups**: Pilih kelas paralel, misalnya `Kelas RA`, bila kuis dipakai bersama beberapa kelompok.
+4. Pilih tombol **Show report** setelah mengubah penyaring.
+5. Telusuri kolom-kolom tabel:
+   - **First name / Last name**: Nama mahasiswa beserta tautan **Review attempt** untuk membuka jawaban dan riwayat pengerjaannya.
+   - **Status**: `Finished` berarti percobaan sudah diserahkan, `In progress` masih dikerjakan, `Never submitted` ditinggalkan tanpa penyerahan, dan `Overdue` melewati batas waktu.
+   - **Started** dan **Completed**: Waktu mulai dan waktu penyerahan percobaan.
+   - **Duration**: Lama pengerjaan yang dihitung sistem.
+   - **Grade**: Nilai akhir kuis; nilai per soal ditampilkan pada kolom **Q. 1**, **Q. 2**, dan seterusnya.
+   - **Requires grading**: Penanda bahwa soal esai pada percobaan tersebut belum dinilai.
+
+Laporan **Results → Grades** menampilkan status percobaan, waktu pengerjaan, nilai, serta penanda soal yang belum dinilai seperti terlihat pada @fig-dosen-pantau-kuis-01.
+
+![Laporan hasil kuis (*Results → Grades*) dengan status percobaan, waktu mulai dan selesai, durasi, nilai, serta penanda `Requires grading` pada soal esai](assets/images/pemantauan-dan-laporan/04-percobaan-dan-hasil-kuis.png){#fig-dosen-pantau-kuis-01 fig-pos="H" width="90%"}
+
+Untuk meninjau jawaban seorang mahasiswa, pilih tautan **Review attempt** pada barisnya. Halaman tersebut menampilkan jawaban tiap soal, umpan balik otomatis, serta kolom komentar dan penyesuaian nilai soal bila diperlukan. Untuk mengunduh rekap, gunakan **Download table data as** di atas tabel dan pilih format seperti CSV, Excel, atau PDF. Untuk menghapus percobaan uji, centang kotak pada baris yang dituju, pilih **Delete selected attempts**, lalu konfirmasi — tindakan ini menghapus jawaban mahasiswa secara permanen.
+
+Jika tabel menampilkan **Nothing to display** padahal mahasiswa melaporkan sudah mengerjakan, periksa kembali kombinasi **Attempts from**, **Attempts that are**, dan **Separate groups**. Pada kuis yang mewajibkan **Safe Exam Browser** (@sec-dosen-seb), percobaan hanya tercatat bila mahasiswa benar-benar membuka kuis lewat SEB; percobaan yang gagal dibuka tidak akan muncul di laporan ini. Jika nilai akhir belum muncul sementara kolom soal berisi `Requires grading`, soal esai tersebut harus dinilai lebih dahulu.
+
+## Menilai jawaban esai pada kuis (*Manual grading*) {#sec-dosen-nilai-esai-kuis}
+
+<!-- Sumber internal: Code/moodle_docs/Quiz_reports.md §Manual grading report; temuan sandbox course 917: report.php?mode=grading menampilkan tabel Questions that need grading dengan kolom Q #, Question name, To grade, Already graded, Total, tautan Grade dan grade all, serta opsi Also show questions that have been graded automatically. -->
+
+Soal pilihan ganda, benar/salah, dan jenis objektif lainnya dinilai otomatis begitu percobaan diserahkan. Soal esai (*Essay*) tidak demikian: jawabannya harus dibaca dan diberi nilai manual, sehingga percobaan yang memuat esai berstatus `Requires grading` pada laporan **Grades**. Anda perlu berada pada halaman kuis dengan peran **Teacher** atau **Non-editing teacher**; keduanya dapat memberi nilai, tetapi hanya **Teacher** yang dapat mengubah soal dan pengaturannya. Buka **Results → Manual grading**, lalu ikuti langkah berikut:
+
+1. Periksa tabel **Questions that need grading**. Setiap baris mewakili satu soal esai dengan kolom **To grade** (jumlah jawaban yang belum dinilai), **Already graded** (sudah dinilai), dan **Total** (seluruh percobaan pada soal itu).
+2. Pilih tautan **Grade** pada baris soal untuk mulai menilai, atau **grade all** untuk menelusuri seluruh jawaban pada soal tersebut satu per satu.
+3. Pada halaman penilaian, baca jawaban mahasiswa, isi **Mark** dengan nilai yang sesuai, lalu tuliskan **Comment** sebagai umpan balik bila diperlukan.
+4. Simpan penilaian, lalu lanjutkan ke jawaban berikutnya hingga tidak ada lagi yang berstatus belum dinilai.
+5. Jika ingin meninjau soal yang sudah dinilai otomatis, centang **Also show questions that have been graded automatically**. Kolom **Already graded** akan bertambah dan nilai otomatis dapat ditimpa bila diperlukan.
+
+Tabel **Questions that need grading** merangkum jumlah jawaban esai yang menunggu penilaian beserta tautan untuk mulai menilai seperti terlihat pada @fig-dosen-nilai-esai-kuis-01.
+
+![Tabel *Questions that need grading* pada *Results → Manual grading*: satu soal esai dengan satu jawaban yang belum dinilai](assets/images/pemantauan-dan-laporan/05-penilaian-esai-kuis.png){#fig-dosen-nilai-esai-kuis-01 fig-pos="H" width="85%"}
+
+Setelah seluruh jawaban esai dinilai, status pada laporan **Grades** berubah dari `Requires grading` menjadi nilai angka, dan nilai akhir kuis masuk ke buku nilai. Jika tabel **Manual grading** kosong, berarti belum ada percobaan yang masuk, tidak ada soal esai pada kuis tersebut, atau seluruh jawabannya sudah dinilai; periksa kembali jenis soal pada tab **Questions** (@sec-dosen-quiz). Jika nilai yang Anda masukkan tidak muncul pada laporan **Grades**, muat ulang halaman laporan dan pastikan penyaring **Attempts that are** tidak membatasi status percobaan. Setelah nilai kuis lengkap, lanjutkan dengan menelusuri laporan jejak digital untuk memantau kapan mahasiswa mengakses bahan ajar dan panduan.
 
 ## Melacak riwayat pembukaan panduan dan materi (*Reports & Logs*) {#sec-dosen-lacak-log}
 
@@ -81,8 +129,8 @@ Anda dapat memverifikasi apakah seorang mahasiswa benar-benar sudah membuka dan 
 3. Telusuri tabel riwayat log yang ditampilkan:
    - **Time**: Menunjukkan tanggal, jam, menit, dan detik persis saat aktivitas terjadi.
    - **Event context**: Menunjukkan lokasi modul atau *section* yang dibuka.
-   - **Component**: Jenis komponen sistem, seperti `Assignment`, `Page`, `URL`, atau `System`.
-   - **Event name**: Nama kejadian teknis, seperti `Course module viewed` (materi dibuka), `The status of the submission has been viewed` (halaman tugas dilihat), atau `A submission has been submitted` (berkas tugas dikirim).
+   - **Component**: Jenis komponen sistem, seperti `Assignment`, `Quiz`, `Page`, `URL`, atau `System`.
+   - **Event name**: Nama kejadian teknis, seperti `Course module viewed` (materi dibuka), `The status of the submission has been viewed` (halaman tugas dilihat), `A submission has been submitted` (berkas tugas dikirim), `Quiz attempt started` (kuis mulai dikerjakan), `Quiz attempt submitted` (jawaban kuis diserahkan), atau `Quiz attempt reviewed` (hasil kuis dibuka).
    - **Description**: Deskripsi naratif rinci mengenai aktivitas yang dilakukan pengguna.
 
 Halaman laporan menyajikan formulir penyaring beserta tabel rekaman jejak digital yang membuktikan kapan mahasiswa membuka materi atau mengirimkan tugas seperti terlihat pada @fig-dosen-laporan-logs-01.
@@ -95,4 +143,4 @@ Halaman laporan menyajikan formulir penyaring beserta tabel rekaman jejak digita
 Rekaman log aktivitas bersifat hanya-baca dan tidak dapat dimanipulasi atau dihapus oleh dosen maupun mahasiswa. Karena itu log berfungsi sebagai bukti otentik akademik dalam penanganan sengketa pengumpulan tugas atau evaluasi keaktifan mahasiswa.
 :::
 
-Jika tabel log kosong setelah Anda menekan **Get these logs**, periksa kembali kombinasi penyaring tanggal dan aktivitas, dan pastikan rentang waktu yang dipilih mencakup saat perkuliahan berlangsung. Jika Anda perlu memantau aktivitas yang sedang berlangsung, pilih menu **Live logs** yang menampilkan rekaman kejadian satu jam terakhir. Jika yang Anda perlukan adalah rekapitulasi jumlah klik dan pembacaan materi secara agregat per dokumen, buka **Activity report** atau **Course participation**. Setelah berkas tugas terhimpun dan batas pengumpulan tercapai, Anda dapat melanjutkan ke tahap pemeriksaan dan penginputan nilai (*Grading*).
+Jika tabel log kosong setelah Anda menekan **Get these logs**, periksa kembali kombinasi penyaring tanggal dan aktivitas, dan pastikan rentang waktu yang dipilih mencakup saat perkuliahan berlangsung. Jika Anda perlu memantau aktivitas yang sedang berlangsung, pilih menu **Live logs** yang menampilkan rekaman kejadian satu jam terakhir. Jika yang Anda perlukan adalah rekapitulasi jumlah klik dan pembacaan materi secara agregat per dokumen, buka **Activity report** atau **Course participation**. Setelah berkas tugas terhimpun, percobaan kuis selesai, dan batas pengumpulan tercapai, Anda dapat melanjutkan ke tahap pemeriksaan dan penginputan nilai (*Grading*).
